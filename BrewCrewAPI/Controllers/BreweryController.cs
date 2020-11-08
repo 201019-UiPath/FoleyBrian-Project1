@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BrewCrewLib;
 using BrewCrewDB.Models;
@@ -33,6 +30,54 @@ namespace BrewCrewAPI.Controllers
             catch (Exception e)
             {
                 return StatusCode(500);
+            }
+        }
+
+        [HttpPost("Add")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        public IActionResult AddBrewery(Brewery brewery)
+        {
+            try
+            {
+                _service.AddBrewery(brewery);
+                return CreatedAtAction("AddBrewery", brewery);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPut("Update")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        public IActionResult UpdateBrewery(Brewery brewery)
+        {
+            try
+            {
+                _service.UpdateBrewery(brewery);
+                return CreatedAtAction("UpdateBrewery", brewery);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("Delete")]
+        [Consumes("application/json")]
+        [Produces("application/json")]
+        public IActionResult DeleteBrewery(Brewery brewery)
+        {
+            try
+            {
+                _service.DeleteBrewery(brewery);
+                return CreatedAtAction("DeleteBrewery", brewery);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
             }
         }
     }

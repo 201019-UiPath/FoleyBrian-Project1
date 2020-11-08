@@ -9,6 +9,6 @@ namespace BrewCrewDB.Models
         public Brewery brewery {get;set;}
         public string BeerID {get;set;}
         public Beer Beer {get;set;}
-        public string Keg {get;set;}
+        public short Keg {get;set;}
     }
 }

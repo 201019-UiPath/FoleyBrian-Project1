@@ -35,8 +35,8 @@ namespace BrewCrewAPI
             services.AddScoped<IDataRepo<Brewery>, BreweryRepo>();
             services.AddScoped<IDataRepo<BeerItem>, BeerItemRepo>();
             services.AddScoped<IDataRepo<Beer>, BeerRepo>();
-            services.AddScoped<IDataRepo<User>, CustomerRepo>();
-            services.AddScoped<IDataRepo<User>, ManagerRepo>();
+            services.AddScoped<IDataRepo<User>, UserRepo>();
+            //services.AddScoped<IDataRepo<User>, ManagerRepo>();
             services.AddScoped<IDataRepo<LineItem>, LineItemRepo>();
             services.AddScoped<IDataRepo<ManagersJoint>, ManagersJointRepo>();
             services.AddScoped<IDataRepo<Order>, OrderRepo>();

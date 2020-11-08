@@ -7,27 +7,26 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BrewCrewDB.Repos
 {
-    public class CustomerRepo: IDataRepo<User>
+    public class UserRepo: IDataRepo<User>
     {
-        //Class Fields
         public BrewCrewContext context;
 
-        //Constructor
-        public CustomerRepo(BrewCrewContext context)
+        public UserRepo(BrewCrewContext context)
         {
             this.context = context;
         }
 
+
         public void Add(User entity)
         {
             context.Users.AddAsync(entity);
-            context.SaveChangesAsync();
+            context.SaveChanges();
         }
 
         public void Delete(User entity)
         {
             context.Remove(entity);
-            context.SaveChangesAsync();
+            context.SaveChanges();
         }
 
         public Task<User> Get(string id)
@@ -37,7 +36,7 @@ namespace BrewCrewDB.Repos
 
         public Task<List<User>> GetAll()
         {
-            return context.Users.Where(x => x.Type == "customer").ToListAsync();
+            return context.Users.Select(x => x).ToListAsync();
         }
 
         public void Update(User entity)
@@ -49,12 +48,17 @@ namespace BrewCrewDB.Repos
                 entityToUpdate.FName = entity.FName;
                 entityToUpdate.LName = entity.LName;
                 entityToUpdate.Password = entity.Password;
-                context.SaveChangesAsync();
+                context.SaveChanges();
             }
             else
             {
                 throw new Exception();
             }
+        }
+
+        public Task<List<User>> GetAllWhere(string identifier)
+        {
+            return context.Users.Where(x => x.Type == identifier).ToListAsync();
         }
     }
 }

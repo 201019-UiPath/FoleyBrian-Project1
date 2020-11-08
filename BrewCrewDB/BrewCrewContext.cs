@@ -4,12 +4,16 @@ using BrewCrewDB.Models;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace BrewCrewDB
 {
     public class BrewCrewContext: DbContext
     {
+        
         public DbSet<Beer> Beers {get;set;}
         public DbSet<User> Users {get;set;}
         public DbSet<BeerItem> BeerItems {get;set;}
@@ -25,10 +29,15 @@ namespace BrewCrewDB
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            //modelBuilder.Entity<Beer>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
+            //modelBuilder.Entity<Admin>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
+
+
             modelBuilder.Entity<Admin>().HasData(
                 new Admin()
                 {
-                    ID = Guid.NewGuid().ToString(),
+                    ID = "1",
                     username = "admin",
                     password = "password"
                 }
@@ -43,7 +52,7 @@ namespace BrewCrewDB
                         State = "MT",
                         City = "Helena",
                         Address = "123 Beer Lane",
-                        Zip = "12345",
+                        Zip = 12345
                     }
             );
 
@@ -55,7 +64,7 @@ namespace BrewCrewDB
                         LName = "Smith",
                         Email = "manager1@email.net",
                         Password = "password",
-                        Type = "manager",
+                        Type = "manager"
                     }
             );
 
@@ -64,69 +73,65 @@ namespace BrewCrewDB
                     {
                         ID = "1",
                         BreweryID = "1",
-                        UserID = "1",
+                        UserID = "1"
                     }
             );
 
-            /*
+            
             modelBuilder.Entity<User>().HasData(
-                    new ManagersJoint()
+                    new User()
+                    {
+                        ID = "2",
+                        FName = "Jane",
+                        LName = "Smith",
+                        Email = "customer1@email.net",
+                        Password = "password",
+                        Type = "customer"
+                    }
+            );
+
+            modelBuilder.Entity<Beer>().HasData(
+                    new Beer()
+                    {
+                        ID = "1",
+                        Name = "Beer",
+                        ABV = 9.2,
+                        IBU = 33,
+                        Price = 4.00,
+                        Type = "stout"
+                    }
+            );
+
+            modelBuilder.Entity<BeerItem>().HasData(
+                    new BeerItem()
                     {
                         ID = "1",
                         BreweryID = "1",
-                        UserID = "1",
+                        BeerID = "1",
+                        Keg = 100
                     }
             );
 
-
-
-            
-            BeerItems = new List<BeerItems>()
-                            {
-                                new BeerItems()
-                                {
-                                    ID = "1",
-                                    BreweryID = "1",
-                                    BeerID = "1",
-                                    Keg = "100",
-                                    Beer = new Beer()
-                                    {
-                                        ID = "1",
-                                        Name = "Beer",
-                                        Type = "Type",
-                                        ABV = "ABV",
-                                        IBU = "IBU",
-                                        Price = "4.00"
-                                    }
-                                }
-                            }
-
-                        },
-                        User = 
-                            Orders = new List<Order>()
-                            {
-                                new Order()
-                                {
-                                    ID = "1",
-                                    UserID = "1",
-                                    BreweryID = "1",
-                                    Date = DateTime.Now,
-                                    TableNumber = "3",
-                                    TotalPrice = "4.00",
-                                    LineItems = new List<LineItems>()
-                                    {
-                                        new LineItems()
-                                        {
-                                            ID = "1",
-                                            OrderID = "1",
-                                            BeerID = "1"
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            modelBuilder.Entity<Order>().HasData(
+                    new Order()
+                    {
+                        ID = "1",
+                        UserID = "1",
+                        BreweryID = "1",
+                        Date = DateTime.Now,
+                        TableNumber = 3,
+                        TotalPrice = 4.00
                     }
-                */
+            );
+
+            modelBuilder.Entity<LineItem>().HasData(
+                    new LineItem()
+                    {
+                        ID = "1",
+                        OrderID = "1",
+                        BeerID = "1"
+                    }
+            );
         }
     }
 }

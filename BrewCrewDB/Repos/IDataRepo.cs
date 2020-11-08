@@ -9,6 +9,7 @@ namespace BrewCrewDB.Repos
     public interface IDataRepo<TEntity>
     {
         Task<List<TEntity>> GetAll();
+        Task<List<TEntity>> GetAllWhere(string identifier);
         Task<TEntity> Get(string id);
         void Add(TEntity entity);
         void Update(TEntity entity);

@@ -27,9 +27,9 @@ namespace BrewCrewDB.Migrations
                     ID = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Type = table.Column<string>(nullable: true),
-                    ABV = table.Column<string>(nullable: true),
-                    IBU = table.Column<string>(nullable: true),
-                    Price = table.Column<string>(nullable: true)
+                    ABV = table.Column<double>(nullable: false),
+                    IBU = table.Column<short>(nullable: false),
+                    Price = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -45,7 +45,7 @@ namespace BrewCrewDB.Migrations
                     State = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true),
-                    Zip = table.Column<string>(nullable: true)
+                    Zip = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -75,7 +75,7 @@ namespace BrewCrewDB.Migrations
                     ID = table.Column<string>(nullable: false),
                     BreweryID = table.Column<string>(nullable: true),
                     BeerID = table.Column<string>(nullable: true),
-                    Keg = table.Column<string>(nullable: true)
+                    Keg = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -127,8 +127,8 @@ namespace BrewCrewDB.Migrations
                     UserID = table.Column<string>(nullable: true),
                     BreweryID = table.Column<string>(nullable: true),
                     Date = table.Column<DateTime>(nullable: false),
-                    TableNumber = table.Column<string>(nullable: true),
-                    TotalPrice = table.Column<string>(nullable: true)
+                    TableNumber = table.Column<short>(nullable: false),
+                    TotalPrice = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -175,21 +175,45 @@ namespace BrewCrewDB.Migrations
             migrationBuilder.InsertData(
                 table: "Admins",
                 columns: new[] { "ID", "password", "username" },
-                values: new object[] { "5426b72a-185d-45a3-91bb-89dc4153f083", "password", "admin" });
+                values: new object[] { "1", "password", "admin" });
+
+            migrationBuilder.InsertData(
+                table: "Beers",
+                columns: new[] { "ID", "ABV", "IBU", "Name", "Price", "Type" },
+                values: new object[] { "1", 9.1999999999999993, (short)33, "Beer", 4.0, "stout" });
 
             migrationBuilder.InsertData(
                 table: "Breweries",
                 columns: new[] { "ID", "Address", "City", "Name", "State", "Zip" },
-                values: new object[] { "1", "123 Beer Lane", "Helena", "Brewery", "MT", "12345" });
+                values: new object[] { "1", "123 Beer Lane", "Helena", "Brewery", "MT", (short)12345 });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "ID", "Email", "FName", "LName", "Password", "Type" },
-                values: new object[] { "1", "manager1@email.net", "John", "Smith", "password", "manager" });
+                values: new object[,]
+                {
+                    { "1", "manager1@email.net", "John", "Smith", "password", "manager" },
+                    { "2", "customer1@email.net", "Jane", "Smith", "password", "customer" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "BeerItems",
+                columns: new[] { "ID", "BeerID", "BreweryID", "Keg" },
+                values: new object[] { "1", "1", "1", (short)100 });
 
             migrationBuilder.InsertData(
                 table: "ManagersJoint",
                 columns: new[] { "ID", "BreweryID", "UserID" },
+                values: new object[] { "1", "1", "1" });
+
+            migrationBuilder.InsertData(
+                table: "Orders",
+                columns: new[] { "ID", "BreweryID", "Date", "TableNumber", "TotalPrice", "UserID" },
+                values: new object[] { "1", "1", new DateTime(2020, 11, 8, 12, 39, 55, 937, DateTimeKind.Local).AddTicks(1530), (short)3, 4.0, "1" });
+
+            migrationBuilder.InsertData(
+                table: "LineItems",
+                columns: new[] { "ID", "BeerID", "OrderID" },
                 values: new object[] { "1", "1", "1" });
 
             migrationBuilder.CreateIndex(

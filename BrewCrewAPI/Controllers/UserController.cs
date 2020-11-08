@@ -1,33 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BrewCrewDB.Models;
 using BrewCrewLib;
+using BrewCrewDB.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BrewCrewAPI.Controllers
 {
-    [Route("api/beer")]
+    [Route("api/user")]
     [ApiController]
-    public class BeerController : Controller
+    public class CustomerController : Controller
     {
         private readonly IService _service;
 
-        public BeerController(IService service)
+        public CustomerController(IService service)
         {
-            this._service = service;
+            _service = service;
         }
 
         [HttpGet("GetAll")]
         [Produces("application/json")]
-        public IActionResult GetAllBeers()
+        public IActionResult GetAllUsers()
         {
             try
             {
-                return Ok(_service.GetAllBeers());
+                return Ok(_service.GetAllUsers());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("GetAll/{identifier}")]
+        [Produces("application/json")]
+        public IActionResult GetAllUsersByIdentifier(string identifier)
+        {
+            try
+            {
+                return Ok(_service.GetAllUsers(identifier));
             }
             catch (Exception e)
             {
@@ -38,12 +49,12 @@ namespace BrewCrewAPI.Controllers
         [HttpPost("Add")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult AddBeer(Beer beer)
+        public IActionResult AddUser(User user)
         {
             try
             {
-                _service.AddBeer(beer);
-                return CreatedAtAction("AddBeer", beer);
+                _service.AddUser(user);
+                return CreatedAtAction("AddUser", user);
             }
             catch (Exception)
             {
@@ -54,12 +65,12 @@ namespace BrewCrewAPI.Controllers
         [HttpPut("Update")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult UpdateBeer(Beer beer)
+        public IActionResult UpdateUser(User user)
         {
             try
             {
-                _service.UpdateBeer(beer);
-                return CreatedAtAction("UpdateBeer", beer);
+                _service.UpdateUser(user);
+                return CreatedAtAction("UpdateUser", user);
             }
             catch (Exception)
             {
@@ -70,12 +81,12 @@ namespace BrewCrewAPI.Controllers
         [HttpDelete("Delete")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteBeer(Beer beer)
+        public IActionResult DeleteUser(User user)
         {
             try
             {
-                _service.DeleteBeer(beer);
-                return CreatedAtAction("DeleteBeer", beer);
+                _service.DeleteUser(user);
+                return CreatedAtAction("DeleteUser", user);
             }
             catch (Exception)
             {

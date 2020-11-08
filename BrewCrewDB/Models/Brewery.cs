@@ -10,7 +10,7 @@ namespace BrewCrewDB.Models
         public string State {get; set;}
         public string City {get; set;}
         public string Address {get; set;}
-        public string Zip {get;set;}
+        public short Zip {get;set;}
         public List<BeerItem> BeerItems {get;set;}
     }
 }

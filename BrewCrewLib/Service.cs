@@ -7,20 +7,17 @@ namespace BrewCrewLib
 {
     public class Service: IService
     {
-        //private readonly BeerItemRepo _beerItemRepo;
         private readonly IDataRepo<Beer> _beerRepo;
         private readonly IDataRepo<Brewery> _breweryRepo;
         private readonly IDataRepo<LineItem> _lineItemRepo;
         private readonly IDataRepo<ManagersJoint> _managersJointRepo;
         private readonly IDataRepo<Order> _orderRepo;
-        private readonly IDataRepo<User> _customerRepo;
-        private readonly IDataRepo<User> _managerRepo;
+        private readonly IDataRepo<User> _userRepo;
         private readonly IDataRepo<BeerItem> _beerItemRepo;
 
         public Service(IDataRepo<BeerItem> beerItemRepo, IDataRepo<Beer> beerRepo,
             IDataRepo<Brewery> breweryRepo, IDataRepo<LineItem> lineItemRepo,
-            IDataRepo<ManagersJoint> managersJointRepo, IDataRepo<Order> orderRepo, IDataRepo<User> customerRepo,
-            IDataRepo<User> managerRepo)
+            IDataRepo<ManagersJoint> managersJointRepo, IDataRepo<Order> orderRepo, IDataRepo<User> userRepo)
         {
             this._beerItemRepo = beerItemRepo;
             this._beerRepo = beerRepo;
@@ -28,8 +25,7 @@ namespace BrewCrewLib
             this._lineItemRepo = lineItemRepo;
             this._managersJointRepo = managersJointRepo;
             this._orderRepo = orderRepo;
-            this._customerRepo = customerRepo;
-            this._managerRepo = managerRepo;
+            this._userRepo = userRepo;
         }
 
         //(C)RUD
@@ -48,19 +44,14 @@ namespace BrewCrewLib
             _breweryRepo.Add(entity);
         }
 
-        public void AddCustomer(User entity)
+        public void AddUser(User entity)
         {
-            _customerRepo.Add(entity);
+            _userRepo.Add(entity);
         }
 
         public void AddLineItem(LineItem entity)
         {
             _lineItemRepo.Add(entity);
-        }
-
-        public void AddManager(User entity)
-        {
-            _managerRepo.Add(entity);
         }
 
         public void AddManagersJoint(ManagersJoint entity)
@@ -89,19 +80,14 @@ namespace BrewCrewLib
             _breweryRepo.Delete(entity);
         }
 
-        public void DeleteCustomer(User entity)
+        public void DeleteUser(User entity)
         {
-            _customerRepo.Delete(entity);
+            _userRepo.Delete(entity);
         }
 
         public void DeleteLineItem(LineItem entity)
         {
             _lineItemRepo.Delete(entity);
-        }
-
-        public void DeleteManager(User entity)
-        {
-            _managerRepo.Delete(entity);
         }
 
         public void DeleteManagersJoint(ManagersJoint entity)
@@ -115,42 +101,42 @@ namespace BrewCrewLib
         }
 
         //C(R)UD
-        public IEnumerable<BeerItem> GetAllBeerItems()
+        public List<BeerItem> GetAllBeerItems()
         {
             return _beerItemRepo.GetAll().Result;
         }
 
-        public IEnumerable<Beer> GetAllBeers()
+        public List<Beer> GetAllBeers()
         {
             return _beerRepo.GetAll().Result;
         }
 
-        public IEnumerable<Brewery> GetAllBreweries()
+        public List<Brewery> GetAllBreweries()
         {
             return _breweryRepo.GetAll().Result;
         }
 
-        public IEnumerable<User> GetAllCustomers()
+        public List<User> GetAllUsers()
         {
-            return _customerRepo.GetAll().Result;
+            return _userRepo.GetAll().Result;
         }
 
-        public IEnumerable<LineItem> GetAllLineItems()
+        public List<User> GetAllUsers(string identifier)
+        {
+            return _userRepo.GetAllWhere(identifier).Result;
+        }
+
+        public List<LineItem> GetAllLineItems()
         {
             return _lineItemRepo.GetAll().Result;
         }
 
-        public IEnumerable<User> GetAllManagers()
-        {
-            return _managerRepo.GetAll().Result;
-        }
-
-        public IEnumerable<ManagersJoint> GetAllManagersJoint()
+        public List<ManagersJoint> GetAllManagersJoint()
         {
             return _managersJointRepo.GetAll().Result;
         }
 
-        public IEnumerable<Order> GetAllOrders()
+        public List<Order> GetAllOrders()
         {
             return _orderRepo.GetAll().Result;
         }
@@ -170,19 +156,14 @@ namespace BrewCrewLib
             return _breweryRepo.Get(id).Result;
         }
 
-        public User GetCustomer(string id)
+        public User GetUser(string id)
         {
-            return _customerRepo.Get(id).Result;
+            return _userRepo.Get(id).Result;
         }
 
         public LineItem GetLineItem(string id)
         {
             return _lineItemRepo.Get(id).Result;
-        }
-
-        public User GetManager(string id)
-        {
-            return _managerRepo.Get(id).Result;
         }
 
         public ManagersJoint GetManagersJoint(string id)
@@ -211,19 +192,14 @@ namespace BrewCrewLib
             _breweryRepo.Update(entity);
         }
 
-        public void UpdateCustomer(User entity)
+        public void UpdateUser(User entity)
         {
-            _customerRepo.Update(entity);
+            _userRepo.Update(entity);
         }
 
         public void UpdateLineItem(LineItem entity)
         {
             _lineItemRepo.Update(entity);
-        }
-
-        public void UpdateManager(User entity)
-        {
-            _managerRepo.Update(entity);
         }
 
         public void UpdateManagersJoint(ManagersJoint entity)

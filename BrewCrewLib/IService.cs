@@ -15,7 +15,7 @@ namespace BrewCrewLib
         BeerItem GetBeerItem(string id);
 
 
-        IEnumerable<BeerItem> GetAllBeerItems();
+        List<BeerItem> GetAllBeerItems();
 
 
         void UpdateBeerItem(BeerItem entity);
@@ -30,7 +30,7 @@ namespace BrewCrewLib
         Beer GetBeer(string id);
 
 
-        IEnumerable<Beer> GetAllBeers();
+        List<Beer> GetAllBeers();
 
 
         void UpdateBeer(Beer entity);
@@ -45,7 +45,7 @@ namespace BrewCrewLib
         Brewery GetBrewery(string id);
 
 
-        IEnumerable<Brewery> GetAllBreweries();
+        List<Brewery> GetAllBreweries();
 
 
         void UpdateBrewery(Brewery entity);
@@ -60,7 +60,7 @@ namespace BrewCrewLib
         LineItem GetLineItem(string id);
 
 
-        IEnumerable<LineItem> GetAllLineItems();
+        List<LineItem> GetAllLineItems();
 
 
         void UpdateLineItem(LineItem entity);
@@ -75,7 +75,7 @@ namespace BrewCrewLib
         ManagersJoint GetManagersJoint(string id);
 
 
-        IEnumerable<ManagersJoint> GetAllManagersJoint();
+        List<ManagersJoint> GetAllManagersJoint();
 
 
         void UpdateManagersJoint(ManagersJoint entity);
@@ -90,40 +90,28 @@ namespace BrewCrewLib
         Order GetOrder(string id);
 
 
-        IEnumerable<Order> GetAllOrders();
+        List<Order> GetAllOrders();
 
 
         void UpdateOrder(Order entity);
 
 
-        void AddCustomer(User entity);
+        void AddUser(User entity);
 
 
-        void DeleteCustomer(User entity);
+        void DeleteUser(User entity);
 
 
-        User GetCustomer(string id);
+        User GetUser(string id);
 
 
-        IEnumerable<User> GetAllCustomers();
+        List<User> GetAllUsers();
 
 
-        void UpdateCustomer(User entity);
+        List<User> GetAllUsers(string identifier);
 
 
-        void AddManager(User entity);
-
-
-        void DeleteManager(User entity);
-
-
-        User GetManager(string id);
-
-
-        IEnumerable<User> GetAllManagers();
-
-
-        void UpdateManager(User entity);
+        void UpdateUser(User entity);
 
     }
 }

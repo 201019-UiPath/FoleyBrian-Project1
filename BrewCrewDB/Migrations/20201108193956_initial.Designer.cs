@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BrewCrewDB.Migrations
 {
     [DbContext(typeof(BrewCrewContext))]
-    [Migration("20201108060034_initial")]
+    [Migration("20201108193956_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,7 +39,7 @@ namespace BrewCrewDB.Migrations
                     b.HasData(
                         new
                         {
-                            ID = "5426b72a-185d-45a3-91bb-89dc4153f083",
+                            ID = "1",
                             password = "password",
                             username = "admin"
                         });
@@ -50,17 +50,17 @@ namespace BrewCrewDB.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("text");
 
-                    b.Property<string>("ABV")
-                        .HasColumnType("text");
+                    b.Property<double>("ABV")
+                        .HasColumnType("double precision");
 
-                    b.Property<string>("IBU")
-                        .HasColumnType("text");
+                    b.Property<short>("IBU")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<string>("Price")
-                        .HasColumnType("text");
+                    b.Property<double>("Price")
+                        .HasColumnType("double precision");
 
                     b.Property<string>("Type")
                         .HasColumnType("text");
@@ -68,6 +68,17 @@ namespace BrewCrewDB.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Beers");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = "1",
+                            ABV = 9.1999999999999993,
+                            IBU = (short)33,
+                            Name = "Beer",
+                            Price = 4.0,
+                            Type = "stout"
+                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.BeerItem", b =>
@@ -81,8 +92,8 @@ namespace BrewCrewDB.Migrations
                     b.Property<string>("BreweryID")
                         .HasColumnType("text");
 
-                    b.Property<string>("Keg")
-                        .HasColumnType("text");
+                    b.Property<short>("Keg")
+                        .HasColumnType("smallint");
 
                     b.HasKey("ID");
 
@@ -91,6 +102,15 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("BreweryID");
 
                     b.ToTable("BeerItems");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = "1",
+                            BeerID = "1",
+                            BreweryID = "1",
+                            Keg = (short)100
+                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.Brewery", b =>
@@ -110,8 +130,8 @@ namespace BrewCrewDB.Migrations
                     b.Property<string>("State")
                         .HasColumnType("text");
 
-                    b.Property<string>("Zip")
-                        .HasColumnType("text");
+                    b.Property<short>("Zip")
+                        .HasColumnType("smallint");
 
                     b.HasKey("ID");
 
@@ -125,7 +145,7 @@ namespace BrewCrewDB.Migrations
                             City = "Helena",
                             Name = "Brewery",
                             State = "MT",
-                            Zip = "12345"
+                            Zip = (short)12345
                         });
                 });
 
@@ -147,6 +167,14 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("OrderID");
 
                     b.ToTable("LineItems");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = "1",
+                            BeerID = "1",
+                            OrderID = "1"
+                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.ManagersJoint", b =>
@@ -188,11 +216,11 @@ namespace BrewCrewDB.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<string>("TableNumber")
-                        .HasColumnType("text");
+                    b.Property<short>("TableNumber")
+                        .HasColumnType("smallint");
 
-                    b.Property<string>("TotalPrice")
-                        .HasColumnType("text");
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("double precision");
 
                     b.Property<string>("UserID")
                         .HasColumnType("text");
@@ -204,6 +232,17 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("UserID");
 
                     b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = "1",
+                            BreweryID = "1",
+                            Date = new DateTime(2020, 11, 8, 12, 39, 55, 937, DateTimeKind.Local).AddTicks(1530),
+                            TableNumber = (short)3,
+                            TotalPrice = 4.0,
+                            UserID = "1"
+                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.User", b =>
@@ -239,6 +278,15 @@ namespace BrewCrewDB.Migrations
                             LName = "Smith",
                             Password = "password",
                             Type = "manager"
+                        },
+                        new
+                        {
+                            ID = "2",
+                            Email = "customer1@email.net",
+                            FName = "Jane",
+                            LName = "Smith",
+                            Password = "password",
+                            Type = "customer"
                         });
                 });
 

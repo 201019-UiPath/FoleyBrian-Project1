@@ -9,35 +9,39 @@ namespace BrewCrewDB.Repos
 {
     public class LineItemRepo: IDataRepo<LineItem>
     {
-        //Class Fields
         public BrewCrewContext context;
 
-        //Constructor
         public LineItemRepo(BrewCrewContext context)
         {
             this.context = context;
         }
 
+
         public void Add(LineItem entity)
         {
             context.LineItems.AddAsync(entity);
-            context.SaveChangesAsync();
+            context.SaveChanges();
         }
 
         public void Delete(LineItem entity)
         {
             context.Remove(entity);
-            context.SaveChangesAsync();
+            context.SaveChanges();
         }
 
         public Task<LineItem> Get(string id)
         {
-            return context.LineItems.SingleAsync(x => x.ID == id);
+            return context.LineItems.SingleAsync(x => x.BeerID == id);
         }
 
         public Task<List<LineItem>> GetAll()
         {
             return context.LineItems.Select(x => x).ToListAsync();
+        }
+
+        public Task<List<LineItem>> GetAllWhere(string identifier)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(LineItem entity)
