@@ -66,19 +66,19 @@ namespace BrewCrewLib
         void UpdateLineItem(LineItem entity);
 
 
-        void AddManagersJoint(ManagersJoint entity);
+        void AddBreweryManager(BreweryManager entity);
 
 
-        void DeleteManagersJoint(ManagersJoint entity);
+        void DeleteBreweryManager(BreweryManager entity);
 
 
-        ManagersJoint GetManagersJoint(string id);
+        BreweryManager GetBreweryManager(string id);
 
 
-        List<ManagersJoint> GetAllManagersJoint();
+        List<BreweryManager> GetAllBreweryManagers();
 
 
-        void UpdateManagersJoint(ManagersJoint entity);
+        void UpdateBreweryManager(BreweryManager entity);
 
 
         void AddOrder(Order entity);

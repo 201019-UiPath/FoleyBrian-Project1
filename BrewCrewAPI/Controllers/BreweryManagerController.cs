@@ -1,30 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BrewCrewDB.Models;
 using BrewCrewLib;
+using BrewCrewDB.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BrewCrewAPI.Controllers
 {
-    [Route("api/beer")]
+    [Route("api/brewery")]
     [ApiController]
-    public class BeerController : Controller
+    public class ManagersJoinController : Controller
     {
+
         private readonly IService _service;
 
-        public BeerController(IService service)
+        public ManagersJoinController(IService service)
         {
             this._service = service;
         }
 
         [HttpGet("GetAll")]
         [Produces("application/json")]
-        public IActionResult GetAllBeers()
+        public IActionResult GetAllBreweryManagers()
         {
             try
             {
-                return Ok(_service.GetAllBeers());
+                return Ok(_service.GetAllBreweryManagers());
             }
             catch (Exception e)
             {
@@ -35,12 +39,12 @@ namespace BrewCrewAPI.Controllers
         [HttpPost("Add")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult AddBeer(Beer beer)
+        public IActionResult AddBreweryManager(BreweryManager breweryManager)
         {
             try
             {
-                _service.AddBeer(beer);
-                return CreatedAtAction("AddBeer", beer);
+                _service.AddBreweryManager(breweryManager);
+                return CreatedAtAction("AddBreweryManager", breweryManager);
             }
             catch (Exception)
             {
@@ -51,12 +55,12 @@ namespace BrewCrewAPI.Controllers
         [HttpPut("Update")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult UpdateBeer(Beer beer)
+        public IActionResult UpdateBreweryManager(BreweryManager breweryManager)
         {
             try
             {
-                _service.UpdateBeer(beer);
-                return CreatedAtAction("UpdateBeer", beer);
+                _service.UpdateBreweryManager(breweryManager);
+                return CreatedAtAction("UpdateBreweryManager", breweryManager);
             }
             catch (Exception)
             {
@@ -67,12 +71,12 @@ namespace BrewCrewAPI.Controllers
         [HttpDelete("Delete")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteBeer(Beer beer)
+        public IActionResult DeleteBreweryManager(BreweryManager breweryManager)
         {
             try
             {
-                _service.DeleteBeer(beer);
-                return CreatedAtAction("DeleteBeer", beer);
+                _service.DeleteBreweryManager(breweryManager);
+                return CreatedAtAction("DeleteBreweryManager", breweryManager);
             }
             catch (Exception)
             {

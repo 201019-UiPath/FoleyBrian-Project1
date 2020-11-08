@@ -1,7 +1,7 @@
 
 namespace BrewCrewDB.Models
 {
-    public class ManagersJoint
+    public class BreweryManager
     {
         public string ID {get;set;}
         public string BreweryID {get;set;}

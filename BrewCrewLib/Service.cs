@@ -10,20 +10,20 @@ namespace BrewCrewLib
         private readonly IDataRepo<Beer> _beerRepo;
         private readonly IDataRepo<Brewery> _breweryRepo;
         private readonly IDataRepo<LineItem> _lineItemRepo;
-        private readonly IDataRepo<ManagersJoint> _managersJointRepo;
+        private readonly IDataRepo<BreweryManager> _breweryManagerRepo;
         private readonly IDataRepo<Order> _orderRepo;
         private readonly IDataRepo<User> _userRepo;
         private readonly IDataRepo<BeerItem> _beerItemRepo;
 
         public Service(IDataRepo<BeerItem> beerItemRepo, IDataRepo<Beer> beerRepo,
             IDataRepo<Brewery> breweryRepo, IDataRepo<LineItem> lineItemRepo,
-            IDataRepo<ManagersJoint> managersJointRepo, IDataRepo<Order> orderRepo, IDataRepo<User> userRepo)
+            IDataRepo<BreweryManager> breweryManagerRepo, IDataRepo<Order> orderRepo, IDataRepo<User> userRepo)
         {
             this._beerItemRepo = beerItemRepo;
             this._beerRepo = beerRepo;
             this._breweryRepo = breweryRepo;
             this._lineItemRepo = lineItemRepo;
-            this._managersJointRepo = managersJointRepo;
+            this._breweryManagerRepo = breweryManagerRepo;
             this._orderRepo = orderRepo;
             this._userRepo = userRepo;
         }
@@ -54,9 +54,9 @@ namespace BrewCrewLib
             _lineItemRepo.Add(entity);
         }
 
-        public void AddManagersJoint(ManagersJoint entity)
+        public void AddBreweryManager(BreweryManager entity)
         {
-            _managersJointRepo.Add(entity);
+            _breweryManagerRepo.Add(entity);
         }
 
         public void AddOrder(Order entity)
@@ -90,9 +90,9 @@ namespace BrewCrewLib
             _lineItemRepo.Delete(entity);
         }
 
-        public void DeleteManagersJoint(ManagersJoint entity)
+        public void DeleteBreweryManager(BreweryManager entity)
         {
-            _managersJointRepo.Delete(entity);
+            _breweryManagerRepo.Delete(entity);
         }
 
         public void DeleteOrder(Order entity)
@@ -131,9 +131,9 @@ namespace BrewCrewLib
             return _lineItemRepo.GetAll().Result;
         }
 
-        public List<ManagersJoint> GetAllManagersJoint()
+        public List<BreweryManager> GetAllBreweryManagers()
         {
-            return _managersJointRepo.GetAll().Result;
+            return _breweryManagerRepo.GetAll().Result;
         }
 
         public List<Order> GetAllOrders()
@@ -166,9 +166,9 @@ namespace BrewCrewLib
             return _lineItemRepo.Get(id).Result;
         }
 
-        public ManagersJoint GetManagersJoint(string id)
+        public BreweryManager GetBreweryManager(string id)
         {
-            return _managersJointRepo.Get(id).Result;
+            return _breweryManagerRepo.Get(id).Result;
         }
 
         public Order GetOrder(string id)
@@ -202,9 +202,9 @@ namespace BrewCrewLib
             _lineItemRepo.Update(entity);
         }
 
-        public void UpdateManagersJoint(ManagersJoint entity)
+        public void UpdateBreweryManager(BreweryManager entity)
         {
-            _managersJointRepo.Update(entity);
+            _breweryManagerRepo.Update(entity);
         }
 
         public void UpdateOrder(Order entity)

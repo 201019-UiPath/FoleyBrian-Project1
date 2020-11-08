@@ -1,12 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using BrewCrewDB.Models;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.ValueGeneration;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+
 
 
 namespace BrewCrewDB
@@ -17,7 +12,7 @@ namespace BrewCrewDB
         public DbSet<Beer> Beers {get;set;}
         public DbSet<User> Users {get;set;}
         public DbSet<BeerItem> BeerItems {get;set;}
-        public DbSet<ManagersJoint> ManagersJoint {get;set;}
+        public DbSet<BreweryManager> BreweryManagers {get;set;}
         public DbSet<Brewery> Breweries {get;set;}
         public DbSet<Order> Orders {get;set;}
         public DbSet<LineItem> LineItems {get;set;}
@@ -68,8 +63,8 @@ namespace BrewCrewDB
                     }
             );
 
-            modelBuilder.Entity<ManagersJoint>().HasData(
-                    new ManagersJoint()
+            modelBuilder.Entity<BreweryManager>().HasData(
+                    new BreweryManager()
                     {
                         ID = "1",
                         BreweryID = "1",
