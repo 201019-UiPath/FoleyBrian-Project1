@@ -30,7 +30,7 @@ namespace BrewCrewLib
 
         public T GetResource(string id)
         {
-            return _repo.Get(id).Result;
+            return _repo.GetById(id).Result;
         }
 
 
@@ -45,9 +45,14 @@ namespace BrewCrewLib
             _repo.Update(entity);
         }
 
-        public List<T> GetAllResources(string identifier)
+        public User GetUserByEmail(string email)
         {
-            return _repo.GetAllWhere(identifier).Result;
+            return _repo.GetUserByEmail(email).Result;
+        }
+
+        public List<User> GetAllUsersByType(string type)
+        {
+            return _repo.GetAllUsersByType(type).Result;
         }
     }
 }

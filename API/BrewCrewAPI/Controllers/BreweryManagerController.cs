@@ -36,6 +36,20 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
+        [HttpGet("Get/{id}")]
+        [Produces("application/json")]
+        public IActionResult GetBreweryManager(string id)
+        {
+            try
+            {
+                return Ok(_service.GetResource(id));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500);
+            }
+        }
+
         [HttpPost("Add")]
         [Consumes("application/json")]
         [Produces("application/json")]

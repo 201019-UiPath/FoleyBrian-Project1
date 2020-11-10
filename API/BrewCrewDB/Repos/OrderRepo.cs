@@ -9,42 +9,35 @@ namespace BrewCrewDB.Repos
 {
     public class OrderRepo: IDataRepo<Order>
     {
-        public BrewCrewContext context;
-
-        public OrderRepo(BrewCrewContext context)
+        public OrderRepo(BrewCrewContext context) : base(context)
         {
-            this.context = context;
+
         }
 
 
-        public void Add(Order entity)
+        override public void Add(Order entity)
         {
             context.Orders.AddAsync(entity);
             context.SaveChanges();
         }
 
-        public void Delete(Order entity)
+        override public void Delete(Order entity)
         {
             context.Remove(entity);
             context.SaveChanges();
         }
 
-        public Task<Order> Get(string id)
+        override public Task<Order> GetById(string id)
         {
             return context.Orders.SingleAsync(x => x.ID == id);
         }
 
-        public Task<List<Order>> GetAll()
+        override public Task<List<Order>> GetAll()
         {
             return context.Orders.Select(x => x).ToListAsync();
         }
 
-        public Task<List<Order>> GetAllWhere(string identifier)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Order entity)
+        override public void Update(Order entity)
         {
             Order entityToUpdate = context.Orders.First(x => x.ID == entity.ID);
             if (entityToUpdate != null)

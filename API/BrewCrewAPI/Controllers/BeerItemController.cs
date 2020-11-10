@@ -10,7 +10,7 @@ using BrewCrewDB.Models;
 
 namespace BrewCrewAPI.Controllers
 {
-    [Route("api/beer")]
+    [Route("api/beeritem")]
     [ApiController]
     public class BeerItemController : Controller
     {
@@ -28,6 +28,20 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 return Ok(_service.GetAllResources());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("Get/{id}")]
+        [Produces("application/json")]
+        public IActionResult GetBeerItem(string id)
+        {
+            try
+            {
+                return Ok(_service.GetResource(id));
             }
             catch (Exception e)
             {

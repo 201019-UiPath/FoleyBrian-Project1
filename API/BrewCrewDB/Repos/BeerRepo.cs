@@ -9,42 +9,35 @@ namespace BrewCrewDB.Repos
 {
     public class BeerRepo : IDataRepo<Beer>
     {
-        public BrewCrewContext context;
-
-        public BeerRepo(BrewCrewContext context)
+        public BeerRepo(BrewCrewContext context) : base(context)
         {
-            this.context = context;
+
         }
 
 
-        public void Add(Beer entity)
+        override public void Add(Beer entity)
         {
             context.Beers.AddAsync(entity);
             context.SaveChanges();
         }
 
-        public void Delete(Beer entity)
+        override public void Delete(Beer entity)
         {
             context.Remove(entity);
             context.SaveChanges();
         }
 
-        public Task<Beer> Get(string id)
+        override public Task<Beer> GetById(string id)
         {
             return context.Beers.SingleAsync(x => x.ID == id);
         }
 
-        public Task<List<Beer>> GetAll()
+        override public Task<List<Beer>> GetAll()
         {
             return context.Beers.Select(x => x).ToListAsync();
         }
 
-        public Task<List<Beer>> GetAllWhere(string identifier)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Beer entity)
+        override public void Update(Beer entity)
         {
             Beer entityToUpdate = context.Beers.First(x => x.ID == entity.ID);
             if (entityToUpdate != null)

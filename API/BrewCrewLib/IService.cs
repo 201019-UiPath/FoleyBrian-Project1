@@ -10,7 +10,9 @@ namespace BrewCrewLib
         void DeleteResource(T entity);
         T GetResource(string id);
         List<T> GetAllResources();
-        List<T> GetAllResources(string identifier);
         void UpdateResource(T entity);
+
+        User GetUserByEmail(string email);
+        List<User> GetAllUsersByType(string type);
     }
 }

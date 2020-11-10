@@ -32,13 +32,41 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
-        [HttpGet("GetAll/{identifier}")]
+        [HttpGet("GetAll/Type/{type}")]
         [Produces("application/json")]
-        public IActionResult GetAllUsersByIdentifier(string identifier)
+        public IActionResult GetAllUsersByType(string type)
         {
             try
             {
-                return Ok(_service.GetAllResources(identifier));
+                return Ok(_service.GetAllUsersByType(type));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("Get/{id}")]
+        [Produces("application/json")]
+        public IActionResult GetUser(string id)
+        {
+            try
+            {
+                return Ok(_service.GetResource(id));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("Get/Login/{email}")]
+        [Produces("application/json")]
+        public IActionResult GetUserByEmail(string email)
+        {
+            try
+            {
+                return Ok(_service.GetUserByEmail(email));
             }
             catch (Exception e)
             {

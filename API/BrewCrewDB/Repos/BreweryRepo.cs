@@ -10,42 +10,34 @@ namespace BrewCrewDB.Repos
 {
     public class BreweryRepo: IDataRepo<Brewery>
     {
-        public BrewCrewContext context;
-
-        public BreweryRepo(BrewCrewContext context)
+        public BreweryRepo(BrewCrewContext context) : base(context)
         {
-            this.context = context;
+
         }
 
-
-        public void Add(Brewery entity)
+        override public void Add(Brewery entity)
         {
             context.Breweries.AddAsync(entity);
             context.SaveChanges();
         }
 
-        public void Delete(Brewery entity)
+        override public void Delete(Brewery entity)
         {
             context.Remove(entity);
             context.SaveChanges();
         }
 
-        public Task<Brewery> Get(string id)
+        override public Task<Brewery> GetById(string id)
         {
             return context.Breweries.SingleAsync(x => x.ID == id);
         }
 
-        public Task<List<Brewery>> GetAll()
+        override public Task<List<Brewery>> GetAll()
         {
             return context.Breweries.Select(x => x).ToListAsync();
         }
 
-        public Task<List<Brewery>> GetAllWhere(string identifier)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Brewery entity)
+        override public void Update(Brewery entity)
         {
             Brewery entityToUpdate = context.Breweries.First(x => x.ID == entity.ID);
             if (entityToUpdate != null)
@@ -62,5 +54,6 @@ namespace BrewCrewDB.Repos
                 throw new Exception();
             }
         }
+
     }
 }

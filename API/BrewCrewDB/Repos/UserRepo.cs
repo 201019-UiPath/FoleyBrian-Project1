@@ -9,37 +9,35 @@ namespace BrewCrewDB.Repos
 {
     public class UserRepo: IDataRepo<User>
     {
-        public BrewCrewContext context;
-
-        public UserRepo(BrewCrewContext context)
+        public UserRepo(BrewCrewContext context) : base(context)
         {
-            this.context = context;
+
         }
 
 
-        public void Add(User entity)
+        override public void Add(User entity)
         {
             context.Users.AddAsync(entity);
             context.SaveChanges();
         }
 
-        public void Delete(User entity)
+        override public void Delete(User entity)
         {
             context.Remove(entity);
             context.SaveChanges();
         }
 
-        public Task<User> Get(string id)
+        override public Task<User> GetById(string id)
         {
             return context.Users.SingleAsync(x => x.ID == id);
         }
 
-        public Task<List<User>> GetAll()
+        override public Task<List<User>> GetAll()
         {
             return context.Users.Select(x => x).ToListAsync();
         }
 
-        public void Update(User entity)
+        override public void Update(User entity)
         {
             User entityToUpdate = context.Users.First(x => x.ID == entity.ID);
             if (entityToUpdate != null)
@@ -54,11 +52,6 @@ namespace BrewCrewDB.Repos
             {
                 throw new Exception();
             }
-        }
-
-        public Task<List<User>> GetAllWhere(string identifier)
-        {
-            return context.Users.Where(x => x.Type == identifier).ToListAsync();
         }
     }
 }

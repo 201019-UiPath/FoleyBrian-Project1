@@ -22,6 +22,10 @@ namespace BrewCrewDB
         {
         }
 
+        public BrewCrewContext()
+        {
+        }
+
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
 

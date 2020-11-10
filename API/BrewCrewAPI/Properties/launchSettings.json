@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "api/beer/GetAll",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "BrewCrewAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "api/beer/GetAll",
       "applicationUrl": "https://localhost:47720;http://localhost:31455",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

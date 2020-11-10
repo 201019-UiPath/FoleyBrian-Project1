@@ -15,6 +15,7 @@ using BrewCrewDB.Models;
 using BrewCrewDB.Repos;
 using Microsoft.EntityFrameworkCore;
 using BrewCrewLib;
+using BrewCrewAPI.Controllers;
 
 namespace BrewCrewAPI
 {
