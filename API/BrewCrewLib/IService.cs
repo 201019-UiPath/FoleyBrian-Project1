@@ -12,7 +12,10 @@ namespace BrewCrewLib
         List<T> GetAllResources();
         void UpdateResource(T entity);
 
+        //Type Specific Calls
         User GetUserByEmail(string email);
+        List<Beer> GetAllBeersByBreweryId(string id);
         List<User> GetAllUsersByType(string type);
+        List<Order> GetAllOrdersByCustomerId(string id);
     }
 }

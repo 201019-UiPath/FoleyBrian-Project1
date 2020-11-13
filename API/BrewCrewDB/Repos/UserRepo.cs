@@ -29,12 +29,12 @@ namespace BrewCrewDB.Repos
 
         override public Task<User> GetById(string id)
         {
-            return context.Users.SingleAsync(x => x.ID == id);
+            return context.Users.Where(x => x.ID == id).Include("Orders").FirstOrDefaultAsync();
         }
 
         override public Task<List<User>> GetAll()
         {
-            return context.Users.Select(x => x).ToListAsync();
+            return context.Users.Select(x => x).Include("Orders").ToListAsync();
         }
 
         override public void Update(User entity)

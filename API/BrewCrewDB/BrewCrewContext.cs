@@ -11,7 +11,6 @@ namespace BrewCrewDB
         
         public DbSet<Beer> Beers {get;set;}
         public DbSet<User> Users {get;set;}
-        public DbSet<BeerItem> BeerItems {get;set;}
         public DbSet<BreweryManager> BreweryManagers {get;set;}
         public DbSet<Brewery> Breweries {get;set;}
         public DbSet<Order> Orders {get;set;}
@@ -27,7 +26,9 @@ namespace BrewCrewDB
 
             //modelBuilder.Entity<Beer>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
             //modelBuilder.Entity<Admin>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
-
+            string guid1 = Guid.NewGuid().ToString();
+            string guid2 = Guid.NewGuid().ToString();
+            string guid3 = Guid.NewGuid().ToString();
 
             modelBuilder.Entity<Admin>().HasData(
                 new Admin()
@@ -42,11 +43,36 @@ namespace BrewCrewDB
             modelBuilder.Entity<Brewery>().HasData(
                     new Brewery()
                     {
-                        ID = "1",
-                        Name = "Brewery",
+                        ID = guid1,
+                        Name = "Missouri River Brewing Company",
+                        State = "MT",
+                        City = "East Helena",
+                        Address = "123 Beer Lane",
+                        Zip = 12345
+                    }
+            );
+
+
+            modelBuilder.Entity<Brewery>().HasData(
+                    new Brewery()
+                    {
+                        ID = guid2,
+                        Name = "Lewis and Clark Brewery",
                         State = "MT",
                         City = "Helena",
-                        Address = "123 Beer Lane",
+                        Address = "123 Stout Lane",
+                        Zip = 12345
+                    }
+            );
+
+            modelBuilder.Entity<Brewery>().HasData(
+                    new Brewery()
+                    {
+                        ID = guid3,
+                        Name = "Bridger Brewing",
+                        State = "MT",
+                        City = "Helena",
+                        Address = "123 Ale Lane",
                         Zip = 12345
                     }
             );
@@ -55,8 +81,8 @@ namespace BrewCrewDB
                     new User()
                     {
                         ID = "1",
-                        FName = "John",
-                        LName = "Smith",
+                        FName = "Michael",
+                        LName = "Scott",
                         Email = "manager1@email.net",
                         Password = "password",
                         Type = "manager"
@@ -67,21 +93,51 @@ namespace BrewCrewDB
                     new BreweryManager()
                     {
                         ID = "1",
-                        BreweryID = "1",
+                        BreweryID = guid1,
                         UserID = "1"
                     }
             );
 
-            
+
             modelBuilder.Entity<User>().HasData(
                     new User()
                     {
                         ID = "2",
-                        FName = "Jane",
-                        LName = "Smith",
-                        Email = "customer1@email.net",
+                        FName = "Dwight",
+                        LName = "Schrute",
+                        Email = "manager2@email.net",
                         Password = "password",
-                        Type = "customer"
+                        Type = "manager"
+                    }
+            );
+
+            modelBuilder.Entity<BreweryManager>().HasData(
+                    new BreweryManager()
+                    {
+                        ID = "2",
+                        BreweryID = guid2,
+                        UserID = "2"
+                    }
+            );
+
+            modelBuilder.Entity<User>().HasData(
+                    new User()
+                    {
+                        ID = "3",
+                        FName = "Jim",
+                        LName = "Halpert",
+                        Email = "manager3@email.net",
+                        Password = "password",
+                        Type = "manager"
+                    }
+            );
+
+            modelBuilder.Entity<BreweryManager>().HasData(
+                    new BreweryManager()
+                    {
+                        ID = "3",
+                        BreweryID = guid3,
+                        UserID = "3"
                     }
             );
 
@@ -93,38 +149,9 @@ namespace BrewCrewDB
                         ABV = 9.2,
                         IBU = 33,
                         Price = 4.00,
-                        Type = "stout"
-                    }
-            );
-
-            modelBuilder.Entity<BeerItem>().HasData(
-                    new BeerItem()
-                    {
-                        ID = "1",
-                        BreweryID = "1",
-                        BeerID = "1",
+                        Type = "stout",
+                        BreweryID = guid1,
                         Keg = 100
-                    }
-            );
-
-            modelBuilder.Entity<Order>().HasData(
-                    new Order()
-                    {
-                        ID = "1",
-                        UserID = "1",
-                        BreweryID = "1",
-                        Date = DateTime.Now,
-                        TableNumber = 3,
-                        TotalPrice = 4.00
-                    }
-            );
-
-            modelBuilder.Entity<LineItem>().HasData(
-                    new LineItem()
-                    {
-                        ID = "1",
-                        OrderID = "1",
-                        BeerID = "1"
                     }
             );
         }

@@ -45,6 +45,8 @@ namespace BrewCrewLib
             _repo.Update(entity);
         }
 
+
+        //Type Specific Calls
         public User GetUserByEmail(string email)
         {
             return _repo.GetUserByEmail(email).Result;
@@ -53,6 +55,16 @@ namespace BrewCrewLib
         public List<User> GetAllUsersByType(string type)
         {
             return _repo.GetAllUsersByType(type).Result;
+        }
+
+        public List<Beer> GetAllBeersByBreweryId(string id)
+        {
+            return _repo.GetAllBeersByBreweryId(id).Result;
+        }
+
+        public List<Order> GetAllOrdersByCustomerId(string id)
+        {
+            return _repo.GetAllOrdersByCustomerId(id).Result;
         }
     }
 }

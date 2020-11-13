@@ -1,7 +1,6 @@
 ﻿using System;
+using Serilog;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BrewCrewDB.Models;
 using BrewCrewLib;
@@ -28,10 +27,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetAllResources());
+                List<LineItem> lineitems = _service.GetAllResources();
+                Log.Information($"Successfully retrieved all line items");
+                return Ok(lineitems);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve all line items - {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -42,10 +44,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetResource(id));
+                LineItem lineitem = _service.GetResource(id);
+                Log.Information($"Successfully retrieved line item {id}");
+                return Ok(lineitem);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve line item - {id} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -58,10 +63,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.AddResource(lineitem);
+                Log.Information($"Successfully added line item {lineitem.ID}");
                 return CreatedAtAction("AddLineItem", lineitem);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to add line item - {lineitem.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -74,10 +81,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.UpdateResource(lineitem);
+                Log.Information($"Successfully updated line item {lineitem.ID}");
                 return CreatedAtAction("UpdateLineItem", lineitem);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to update line item - {lineitem.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -90,10 +99,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.DeleteResource(lineitem);
+                Log.Information($"Successfully deleted line item {lineitem.ID}");
                 return CreatedAtAction("DeleteLineItem", lineitem);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to delete line item - {e.Message}");
                 return BadRequest();
             }
         }

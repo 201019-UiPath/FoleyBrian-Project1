@@ -35,7 +35,7 @@ namespace BrewCrewDB.Repos
 
         override public Task<List<BreweryManager>> GetAll()
         {
-            return context.BreweryManagers.Select(x => x).ToListAsync();
+            return context.BreweryManagers.Select(x => x).Include("Users").ToListAsync();
         }
 
         override public void Update(BreweryManager entity)

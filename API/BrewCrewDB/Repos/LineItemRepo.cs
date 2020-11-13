@@ -34,7 +34,7 @@ namespace BrewCrewDB.Repos
 
         override public Task<List<LineItem>> GetAll()
         {
-            return context.LineItems.Select(x => x).ToListAsync();
+            return context.LineItems.Select(x => x).Include("Beer").ToListAsync();
         }
 
         override public void Update(LineItem entity)

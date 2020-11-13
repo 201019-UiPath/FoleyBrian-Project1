@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace BrewCrewAPI
 {
@@ -13,6 +14,9 @@ namespace BrewCrewAPI
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.File("/Users/brianfoley/Desktop/FoleyBrian-Project1/API/logs.txt")
+                .CreateLogger();
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -24,12 +24,23 @@ namespace BrewCrewDB.Repos
 
         public Task<User> GetUserByEmail(string email)
         {
-            return context.Users.FirstAsync(x => x.Email == email);
+            return context.Users.Where(x => x.Email == email).Include("Orders").FirstAsync();
         }
 
         public Task<List<User>> GetAllUsersByType(string type)
         {
             return context.Users.Where(x => x.Type == type).ToListAsync();
+        }
+
+        public Task<List<Beer>> GetAllBeersByBreweryId(string id)
+        {
+            //Task<List
+            return context.Beers.Where(x => x.BreweryID == id).ToListAsync();
+        }
+
+        public Task<List<Order>> GetAllOrdersByCustomerId(string id)
+        {
+            return context.Orders.Where(x => x.UserID == id).Include(x => x.LineItems).ThenInclude(y => y.Beer).ToListAsync();
         }
     }
 }

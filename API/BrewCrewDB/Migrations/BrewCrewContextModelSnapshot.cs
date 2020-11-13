@@ -51,8 +51,14 @@ namespace BrewCrewDB.Migrations
                     b.Property<double>("ABV")
                         .HasColumnType("double precision");
 
+                    b.Property<string>("BreweryID")
+                        .HasColumnType("text");
+
                     b.Property<short>("IBU")
                         .HasColumnType("smallint");
+
+                    b.Property<int>("Keg")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
@@ -65,6 +71,8 @@ namespace BrewCrewDB.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("BreweryID");
+
                     b.ToTable("Beers");
 
                     b.HasData(
@@ -72,42 +80,12 @@ namespace BrewCrewDB.Migrations
                         {
                             ID = "1",
                             ABV = 9.1999999999999993,
+                            BreweryID = "42e1c629-ceb9-44d7-a555-e16a30232b4a",
                             IBU = (short)33,
+                            Keg = 100,
                             Name = "Beer",
                             Price = 4.0,
                             Type = "stout"
-                        });
-                });
-
-            modelBuilder.Entity("BrewCrewDB.Models.BeerItem", b =>
-                {
-                    b.Property<string>("ID")
-                        .HasColumnType("text");
-
-                    b.Property<string>("BeerID")
-                        .HasColumnType("text");
-
-                    b.Property<string>("BreweryID")
-                        .HasColumnType("text");
-
-                    b.Property<short>("Keg")
-                        .HasColumnType("smallint");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("BeerID");
-
-                    b.HasIndex("BreweryID");
-
-                    b.ToTable("BeerItems");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = "1",
-                            BeerID = "1",
-                            BreweryID = "1",
-                            Keg = (short)100
                         });
                 });
 
@@ -138,10 +116,28 @@ namespace BrewCrewDB.Migrations
                     b.HasData(
                         new
                         {
-                            ID = "1",
+                            ID = "42e1c629-ceb9-44d7-a555-e16a30232b4a",
                             Address = "123 Beer Lane",
+                            City = "East Helena",
+                            Name = "Missouri River Brewing Company",
+                            State = "MT",
+                            Zip = (short)12345
+                        },
+                        new
+                        {
+                            ID = "d831ea52-a9cc-4f3b-adcd-c2890809a247",
+                            Address = "123 Stout Lane",
                             City = "Helena",
-                            Name = "Brewery",
+                            Name = "Lewis and Clark Brewery",
+                            State = "MT",
+                            Zip = (short)12345
+                        },
+                        new
+                        {
+                            ID = "30042111-ab04-4f86-9ecd-cdb342276b65",
+                            Address = "123 Ale Lane",
+                            City = "Helena",
+                            Name = "Bridger Brewing",
                             State = "MT",
                             Zip = (short)12345
                         });
@@ -170,8 +166,20 @@ namespace BrewCrewDB.Migrations
                         new
                         {
                             ID = "1",
-                            BreweryID = "1",
+                            BreweryID = "42e1c629-ceb9-44d7-a555-e16a30232b4a",
                             UserID = "1"
+                        },
+                        new
+                        {
+                            ID = "2",
+                            BreweryID = "d831ea52-a9cc-4f3b-adcd-c2890809a247",
+                            UserID = "2"
+                        },
+                        new
+                        {
+                            ID = "3",
+                            BreweryID = "30042111-ab04-4f86-9ecd-cdb342276b65",
+                            UserID = "3"
                         });
                 });
 
@@ -193,14 +201,6 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("OrderID");
 
                     b.ToTable("LineItems");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = "1",
-                            BeerID = "1",
-                            OrderID = "1"
-                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.Order", b =>
@@ -230,17 +230,6 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("UserID");
 
                     b.ToTable("Orders");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = "1",
-                            BreweryID = "1",
-                            Date = new DateTime(2020, 11, 8, 15, 48, 58, 974, DateTimeKind.Local).AddTicks(5580),
-                            TableNumber = (short)3,
-                            TotalPrice = 4.0,
-                            UserID = "1"
-                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.User", b =>
@@ -272,37 +261,42 @@ namespace BrewCrewDB.Migrations
                         {
                             ID = "1",
                             Email = "manager1@email.net",
-                            FName = "John",
-                            LName = "Smith",
+                            FName = "Michael",
+                            LName = "Scott",
                             Password = "password",
                             Type = "manager"
                         },
                         new
                         {
                             ID = "2",
-                            Email = "customer1@email.net",
-                            FName = "Jane",
-                            LName = "Smith",
+                            Email = "manager2@email.net",
+                            FName = "Dwight",
+                            LName = "Schrute",
                             Password = "password",
-                            Type = "customer"
+                            Type = "manager"
+                        },
+                        new
+                        {
+                            ID = "3",
+                            Email = "manager3@email.net",
+                            FName = "Jim",
+                            LName = "Halpert",
+                            Password = "password",
+                            Type = "manager"
                         });
                 });
 
-            modelBuilder.Entity("BrewCrewDB.Models.BeerItem", b =>
+            modelBuilder.Entity("BrewCrewDB.Models.Beer", b =>
                 {
-                    b.HasOne("BrewCrewDB.Models.Beer", "Beer")
-                        .WithMany()
-                        .HasForeignKey("BeerID");
-
-                    b.HasOne("BrewCrewDB.Models.Brewery", "brewery")
-                        .WithMany("BeerItems")
+                    b.HasOne("BrewCrewDB.Models.Brewery", null)
+                        .WithMany("Beers")
                         .HasForeignKey("BreweryID");
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.BreweryManager", b =>
                 {
-                    b.HasOne("BrewCrewDB.Models.Brewery", "Brewery")
-                        .WithMany()
+                    b.HasOne("BrewCrewDB.Models.Brewery", null)
+                        .WithMany("BreweryManagers")
                         .HasForeignKey("BreweryID");
 
                     b.HasOne("BrewCrewDB.Models.User", "User")
@@ -316,18 +310,18 @@ namespace BrewCrewDB.Migrations
                         .WithMany()
                         .HasForeignKey("BeerID");
 
-                    b.HasOne("BrewCrewDB.Models.Order", "Order")
+                    b.HasOne("BrewCrewDB.Models.Order", null)
                         .WithMany("LineItems")
                         .HasForeignKey("OrderID");
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.Order", b =>
                 {
-                    b.HasOne("BrewCrewDB.Models.Brewery", "Brewery")
-                        .WithMany()
+                    b.HasOne("BrewCrewDB.Models.Brewery", null)
+                        .WithMany("Orders")
                         .HasForeignKey("BreweryID");
 
-                    b.HasOne("BrewCrewDB.Models.User", "User")
+                    b.HasOne("BrewCrewDB.Models.User", null)
                         .WithMany("Orders")
                         .HasForeignKey("UserID");
                 });

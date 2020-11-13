@@ -34,14 +34,12 @@ namespace BrewCrewAPI
             services.AddControllers();
             services.AddDbContext<BrewCrewContext>(options => options.UseNpgsql(Configuration.GetConnectionString("BrewCrewDB")));
             services.AddScoped<IDataRepo<Brewery>, BreweryRepo>();
-            services.AddScoped<IDataRepo<BeerItem>, BeerItemRepo>();
             services.AddScoped<IDataRepo<Beer>, BeerRepo>();
             services.AddScoped<IDataRepo<User>, UserRepo>();
             services.AddScoped<IDataRepo<LineItem>, LineItemRepo>();
             services.AddScoped<IDataRepo<BreweryManager>, BreweryManagerRepo>();
             services.AddScoped<IDataRepo<Order>, OrderRepo>();
             services.AddScoped<IService<Brewery>, Service<Brewery>>();
-            services.AddScoped<IService<BeerItem>, Service<BeerItem>>();
             services.AddScoped<IService<Beer>, Service<Beer>>();
             services.AddScoped<IService<User>, Service<User>>();
             services.AddScoped<IService<LineItem>, Service<LineItem>>();

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using BrewCrewLib;
 using BrewCrewDB.Models;
+using Serilog;
+using System.Collections.Generic;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,10 +27,30 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetAllResources());
+                List<Order> orders = _service.GetAllResources();
+                Log.Information($"Successfully retrieved all orders");
+                return Ok(orders);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve order - {e.Message}");
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("Get/user/{id}")]
+        [Produces("application/json")]
+        public IActionResult GetAllOrdersByUserId(string id)
+        {
+            try
+            {
+                List<Order> orders = _service.GetAllOrdersByCustomerId(id);
+                Log.Information($"Successfully retrieved all orders");
+                return Ok(orders);
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"Unable to retrieve order - {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -39,10 +61,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetResource(id));
+                Order order = _service.GetResource(id);
+                Log.Information($"Successfully retrieved order {id}");
+                return Ok(order);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve order - {id} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -55,10 +80,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.AddResource(order);
+                Log.Information($"Successfully added order {order.ID}");
                 return CreatedAtAction("AddOrder", order);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to add order - {order.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -71,10 +98,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.UpdateResource(order);
+                Log.Information($"Successfully updated order {order.ID}");
                 return CreatedAtAction("UpdateOrder", order);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to update order - {order.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -87,10 +116,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.DeleteResource(order);
+                Log.Information($"Successfully deleted order {order.ID}");
                 return CreatedAtAction("DeleteBrewery", order);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to delete order - {order.ID} {e.Message}");
                 return BadRequest();
             }
         }

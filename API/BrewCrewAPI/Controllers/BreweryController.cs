@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using BrewCrewLib;
 using BrewCrewDB.Models;
+using Serilog;
+using System.Collections.Generic;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,10 +27,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetAllResources());
+                List<Brewery> breweries = _service.GetAllResources();
+                Log.Information($"Successfully retrieved all breweries");
+                return Ok(breweries);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve all breweries - {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -39,10 +44,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetResource(id));
+                Brewery brewery = _service.GetResource(id);
+                Log.Information($"Successfully retrieved brewery {id}");
+                return Ok(brewery);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve brewery - {id} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -55,10 +63,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.AddResource(brewery);
+                Log.Information($"Successfully added brewery {brewery.ID}");
                 return CreatedAtAction("AddBrewery", brewery);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to add brewery - {brewery.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -71,10 +81,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.UpdateResource(brewery);
+                Log.Information($"Successfully updated brewery {brewery.ID}");
                 return CreatedAtAction("UpdateBrewery", brewery);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to update brewery - {brewery.ID} {e.Message}");
                 return BadRequest();
             }
         }
@@ -87,10 +99,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.DeleteResource(brewery);
+                Log.Information($"Successfully deleted brewery {brewery.ID}");
                 return CreatedAtAction("DeleteBrewery", brewery);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to delete brewery - {brewery.ID} {e.Message}");
                 return BadRequest();
             }
         }

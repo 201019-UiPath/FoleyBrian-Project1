@@ -1,0 +1,481 @@
+2020-11-12 16:55:29.721 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 16:55:31.081 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 16:55:35.110 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 16:56:42.763 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 16:58:03.431 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 16:58:29.896 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 16:59:19.195 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 16:59:41.469 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:02:16.327 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 17:02:17.582 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 17:02:55.313 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:03:33.755 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:04:07.392 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:05:04.708 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:06:29.657 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:06:54.093 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:07:03.007 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:07:23.694 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:07:31.579 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:08:29.853 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:08:36.460 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:09:44.229 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:09:47.545 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:10:52.920 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:13:01.674 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:13:16.340 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:14:45.908 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:14:52.049 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:16:18.689 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:16:20.603 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:16:56.543 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:16:59.164 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:17:09.673 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:17:12.138 -07:00 [INF] Successfully retrieved beers by brewery Id 52bf2b63-0598-4b93-9396-baa76ea7768a
+2020-11-12 17:17:14.089 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:17:15.790 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:17:17.618 -07:00 [INF] Successfully retrieved beers by brewery Id 52bf2b63-0598-4b93-9396-baa76ea7768a
+2020-11-12 17:17:19.067 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:17:22.204 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:17:24.359 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:24:15.172 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:24:16.561 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:26:09.234 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:26:11.015 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:26:14.036 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:26:16.587 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:26:21.047 -07:00 [INF] Successfully retrieved beers by brewery Id 52bf2b63-0598-4b93-9396-baa76ea7768a
+2020-11-12 17:26:22.660 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:26:24.552 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:27:09.099 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:27:12.509 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:27:13.799 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:27:15.382 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:27:18.373 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:27:19.126 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:27:19.997 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:27:21.491 -07:00 [INF] Successfully retrieved beers by brewery Id 52bf2b63-0598-4b93-9396-baa76ea7768a
+2020-11-12 17:27:22.703 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:27:23.482 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:27:25.972 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:28:04.590 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:28:26.653 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:28:28.098 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:29:57.347 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:30:00.401 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:30:33.170 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:30:38.533 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:34:28.689 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:30.429 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:34:34.496 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:35.413 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:34:36.682 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:37.568 -07:00 [INF] Successfully retrieved beers by brewery Id 52bf2b63-0598-4b93-9396-baa76ea7768a
+2020-11-12 17:34:40.295 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:41.703 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:34:42.920 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:43.952 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:34:46.332 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:34:47.370 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:34:48.828 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:35:11.632 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:35:12.928 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:35:13.707 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:35:15.055 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:35:16.951 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:35:18.290 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:35:20.272 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:35:21.356 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:48:06.614 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:48:07.698 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:48:53.769 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:48:55.131 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:48:57.186 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:49:01.003 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:49:04.014 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:49:04.669 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:49:24.280 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:49:25.107 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:49:30.732 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:51:06.074 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:51:07.407 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:51:40.731 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:51:41.857 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:51:42.796 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:53:54.102 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:53:55.100 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:53:56.950 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:53:57.956 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 17:53:59.435 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:54:00.392 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:55:34.029 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:55:35.256 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:56:54.272 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 17:56:55.305 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:57:03.753 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:57:08.610 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 17:57:25.053 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:03:11.922 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:03:13.014 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:04:13.354 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:04:14.295 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:04:23.381 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:04:33.862 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:04:35.625 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:04:36.779 -07:00 [INF] Successfully retrieved beers by brewery Id 0ee8c142-dbfe-4d22-8fca-a9dbe93678a2
+2020-11-12 18:04:37.528 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:04:38.114 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:06:49.681 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:06:51.020 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:06:59.825 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:42:24.651 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:42:26.055 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:43:17.710 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:43:19.366 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:46:06.269 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 18:46:06.436 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:46:12.631 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:48:22.498 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 18:48:23.868 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 18:48:41.540 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 18:48:41.699 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:48:44.851 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:54:10.372 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 18:54:10.534 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:54:14.024 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 18:57:24.838 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 18:57:25.006 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 18:57:26.818 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:10:46.994 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:10:47.161 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:10:48.324 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:12:55.122 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:12:55.267 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:12:57.257 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:21:08.992 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:21:09.147 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:21:10.625 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:24:59.837 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:25:00.009 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:25:01.293 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:32:58.620 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:32:58.811 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:33:00.059 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:35:08.086 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:35:08.225 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:35:10.143 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:35:54.058 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:35:54.206 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:36:03.084 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:40:57.221 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:40:57.366 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:40:59.294 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:43:23.615 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:43:23.752 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:43:24.815 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:44:26.175 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:44:26.337 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:44:27.267 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:49:40.347 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:49:40.491 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:49:41.953 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:50:10.617 -07:00 [INF] Successfully added order 5EB6A20C-619C-46CE-90E0-86C0EBEC21DF
+2020-11-12 19:51:34.668 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:51:53.416 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:52:55.361 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:52:55.505 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 19:52:57.042 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 19:53:19.144 -07:00 [INF] Successfully added order C7CDB513-B592-40B3-ABF9-4E723D1B86B4
+2020-11-12 19:56:41.299 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 19:59:46.925 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 20:00:01.857 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:00:04.108 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:00:07.328 -07:00 [INF] Successfully added order C1C869E7-A5D7-4F64-86D7-5B06F6E53A51
+2020-11-12 20:00:11.786 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:00:16.436 -07:00 [INF] Successfully added order A21D8640-ED31-4D46-B63B-EB215803C45C
+2020-11-12 20:00:34.907 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 20:00:54.398 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:02:56.461 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 20:02:56.612 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:02:59.068 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:04:22.851 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 20:04:23.028 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:04:24.294 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:06:42.833 -07:00 [INF] Successfully retrieved user 2
+2020-11-12 20:06:42.985 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:06:44.657 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:06:49.502 -07:00 [INF] Successfully added order BF922276-904D-43A9-9A97-99088200F78F
+2020-11-12 20:06:51.927 -07:00 [INF] Successfully retrieved beers by brewery Id 13b0f54c-0de3-4c01-adde-504d9e363d96
+2020-11-12 20:30:54.394 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 20:30:55.648 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 20:31:57.195 -07:00 [INF] Successfully added user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:31:57.394 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:34:15.283 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:34:15.427 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:34:19.738 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:34:25.229 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:34:27.253 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:34:28.983 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:34:33.213 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:34:34.234 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:34:36.385 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:35:57.630 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:35:57.812 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:35:59.687 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:36:05.627 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:10.885 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 20:36:11.853 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:12.971 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 20:36:13.872 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:14.737 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:36:16.067 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:43.241 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:36:43.380 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:44.627 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:36:45.868 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:36:48.597 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:36:49.665 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:38:05.426 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:38:05.590 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:38:25.665 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:38:26.574 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:38:27.746 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:38:28.495 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:40:30.081 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 20:40:30.225 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 20:40:35.216 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 20:40:36.383 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:05:04.860 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:05:06.153 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:05:24.375 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:05:24.531 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:05:30.946 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:05:40.476 -07:00 [INF] Successfully added order BD9A6956-4B52-450C-92A6-4E141E3D2939
+2020-11-12 21:05:43.498 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:05:46.378 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:06:11.163 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:06:15.470 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:06:20.413 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:06:22.784 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:06:28.871 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:08:07.022 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:08:07.176 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:08:08.579 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:08:30.582 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:09:59.253 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:10:00.564 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:10:42.266 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:10:42.430 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:10:43.897 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:10:46.186 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:11:04.534 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:11:07.391 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:11:16.103 -07:00 [INF] Successfully added order 5FD6E959-B754-4F78-B35D-C3BACC1E4692
+2020-11-12 21:11:18.032 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:11:19.702 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:14:37.225 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:14:37.376 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:15:39.213 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:15:39.359 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:28.589 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:16:28.756 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:31.134 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:16:34.419 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:35.410 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:16:37.381 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:38.426 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:16:40.585 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:41.580 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:16:47.625 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:48.875 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:16:49.768 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:50.733 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:16:53.768 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:16:55.098 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:16:56.296 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:16:57.159 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:16:58.268 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:16:59.446 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:01.378 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:17:05.835 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:09.317 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:37.308 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:17:37.450 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:38.759 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:39.731 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:40.787 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:43.413 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:45.398 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:47.842 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:48.822 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:17:50.543 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:51.307 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:17:52.206 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:17:53.235 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:17:54.348 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:17:55.765 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:18:02.848 -07:00 [INF] Successfully added order DF13A145-94E6-4CCF-AC5A-04B2F69D9DAA
+2020-11-12 21:18:04.457 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:18:09.491 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:18:12.400 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:18:18.229 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:18:44.979 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:19:05.826 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:19:07.244 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:19:08.699 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:19:09.931 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:19:10.676 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:19:12.648 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:19:13.410 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:19:16.149 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:19:17.166 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:19:18.066 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:19:22.883 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:19:27.826 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:19:28.643 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:23.219 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:20:23.385 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:28.984 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:20:40.520 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:41.095 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:20:42.400 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:43.547 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:20:45.713 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:48.346 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:20:49.360 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:51.983 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:20:52.827 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:20:53.832 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:20:58.112 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:01.088 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:21:02.984 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:03.997 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:07.372 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:08.399 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:21:09.661 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:10.425 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:11.585 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:12.495 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:21:13.576 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:14.335 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:15.450 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:16.637 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:17.809 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:21:20.627 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:23.059 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:24.006 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:21:25.448 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:26.448 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:21:27.547 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:21:28.284 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:21:29.722 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:05.028 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:22:06.246 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:07.747 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:22:09.151 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:10.383 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:22:11.477 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:12.131 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:22:15.885 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:17.326 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:22:18.842 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:19.927 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:22:24.372 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:22:25.591 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:27.924 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:22:32.536 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:22:33.330 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:39.090 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:22:40.795 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:43.347 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:22:44.935 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:22:45.780 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:23:07.504 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:23:10.309 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:23:38.484 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:23:39.369 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:23:40.510 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:23:41.463 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:23:42.493 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:23:43.262 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:23:48.936 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:23:50.788 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:24:26.628 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:24:28.389 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:24:29.548 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:24:32.273 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:30:05.150 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:30:06.415 -07:00 [INF] Successfully retrieved all beers
+2020-11-12 21:30:21.598 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:30:21.799 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:30:26.341 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:30:28.313 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:31:02.723 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:31:02.886 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:31:05.373 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:31:06.874 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:34:06.270 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:34:06.437 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:34:10.443 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:34:15.289 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:34:16.338 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:35:34.860 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:35:35.010 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:35:43.019 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:35:45.604 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:35:46.733 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:35:47.752 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:35:48.647 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:35:52.395 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:35:53.985 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:35:55.031 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:35:58.694 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:38:02.294 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:38:02.491 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:38:03.794 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:38:05.927 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:38:53.068 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:38:53.214 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:38:54.530 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:38:57.142 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:40:25.143 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:40:30.257 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:40:44.712 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:40:45.601 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:42:00.584 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:43:28.020 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:43:32.180 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:43:38.139 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:43:38.289 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:43:39.838 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:43:50.674 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:43:57.162 -07:00 [INF] Successfully added order CD399B99-3DCB-482F-BB86-73478302BBEF
+2020-11-12 21:43:59.985 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:44:05.546 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:44:36.314 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-12 21:44:36.455 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:44:38.031 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:44:46.350 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:44:55.948 -07:00 [INF] Successfully added order 126701D6-CA27-460D-8910-3AB7BE5CC4D6
+2020-11-12 21:44:57.806 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:45:02.258 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:45:05.084 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:45:06.101 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:49:09.026 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:09.026 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:13.902 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:17.245 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:20.106 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:21.614 -07:00 [INF] Successfully retrieved all orders
+2020-11-12 21:49:23.637 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:26.032 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:28.333 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:30.520 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:35.980 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:37.983 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:40.041 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-12 21:49:41.298 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:42.182 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-12 21:49:43.132 -07:00 [INF] Successfully retrieved all breweries
+2020-11-12 21:49:43.748 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-12 21:49:45.958 -07:00 [INF] Successfully retrieved all breweries

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using BrewCrewLib;
 using BrewCrewDB.Models;
+using Serilog;
+using System.Collections.Generic;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,10 +26,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetAllResources());
+                List<User> users = _service.GetAllResources();
+                Log.Information($"Successfully retrieved all users");
+                return Ok(users);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve all users - {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -38,10 +43,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetAllUsersByType(type));
+                List<User> users = _service.GetAllUsersByType(type);
+                Log.Information($"Successfully retrieved all users by type: {type}");
+                return Ok(users);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve user by type - {type} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -52,10 +60,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetResource(id));
+                User user = _service.GetResource(id);
+                Log.Information($"Successfully retrieved user {user.ID}");
+                return Ok(user);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve user - {id} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -66,10 +77,13 @@ namespace BrewCrewAPI.Controllers
         {
             try
             {
-                return Ok(_service.GetUserByEmail(email));
+                User user = _service.GetUserByEmail(email);
+                Log.Information($"Successfully retrieved user {user.ID}");
+                return Ok(user);
             }
             catch (Exception e)
             {
+                Log.Warning($"Unable to retrieve user by email - {email} {e.Message}");
                 return StatusCode(500);
             }
         }
@@ -82,10 +96,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.AddResource(user);
+                Log.Information($"Successfully added user {user.ID}");
                 return CreatedAtAction("AddUser", user);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to add user - {user.ID} : {e.Message}");
                 return BadRequest();
             }
         }
@@ -98,10 +114,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.UpdateResource(user);
+                Log.Information($"Successfully updated user {user.ID}");
                 return CreatedAtAction("UpdateUser", user);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to update user - {user.ID} : {e.Message}");
                 return BadRequest();
             }
         }
@@ -114,10 +132,12 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 _service.DeleteResource(user);
+                Log.Information($"Successfully deleted user {user.ID}");
                 return CreatedAtAction("DeleteUser", user);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Log.Warning($"Unable to delete user - {user.ID} : {e.Message} ");
                 return BadRequest();
             }
         }
