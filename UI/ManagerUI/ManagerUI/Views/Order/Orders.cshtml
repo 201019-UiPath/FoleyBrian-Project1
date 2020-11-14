@@ -1,8 +1,69 @@
-﻿@{
+﻿@model IEnumerable<ManagerUI.Models.Order>
+
+@{
     ViewData["Title"] = "Orders Page";
     Layout = "~/Views/Shared/_LoggedInLayout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Orders</h1>
-</div>
+<h1>Order History</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                Beer Name
+            </th>
+            <th>
+                ABV
+            </th>
+            <th>
+                IBU
+            </th>
+            <th>
+                Keg
+            </th>
+            <th>
+                Price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => order.Date)
+                    @foreach (var item in order.LineItems)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beer.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beer.ABV)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beer.IBU)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beer.Keg)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beer.Price)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                        </td>
+                    </tr>
+                    }
+               </td>
+          </tr>
+         }
+
+    </tbody>
+</table>

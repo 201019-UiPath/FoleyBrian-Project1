@@ -17,5 +17,6 @@ namespace BrewCrewLib
         List<Beer> GetAllBeersByBreweryId(string id);
         List<User> GetAllUsersByType(string type);
         List<Order> GetAllOrdersByCustomerId(string id);
+        List<Order> GetAllOrdersByBreweryId(string id);
     }
 }

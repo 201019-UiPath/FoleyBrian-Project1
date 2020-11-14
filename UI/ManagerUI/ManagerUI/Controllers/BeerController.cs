@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ManagerUI.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
-using System.Net.Http.Formatting;
-using System.Net.Http.Json;
 using System.Text;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

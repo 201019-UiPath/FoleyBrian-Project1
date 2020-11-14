@@ -45,12 +45,29 @@ namespace BrewCrewAPI.Controllers
             try
             {
                 List<Order> orders = _service.GetAllOrdersByCustomerId(id);
-                Log.Information($"Successfully retrieved all orders");
+                Log.Information($"Successfully retrieved all orders from customer {id}");
                 return Ok(orders);
             }
             catch (Exception e)
             {
-                Log.Warning($"Unable to retrieve order - {e.Message}");
+                Log.Warning($"Unable to retrieve order - {id} {e.Message}");
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("Get/brewery/{id}")]
+        [Produces("application/json")]
+        public IActionResult GetAllOrdersByBreweryId(string id)
+        {
+            try
+            {
+                List<Order> orders = _service.GetAllOrdersByBreweryId(id);
+                Log.Information($"Successfully retrieved all orders from brewery {id}");
+                return Ok(orders);
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"Unable to retrieve order from brewery - {e} {e.Message}");
                 return StatusCode(500);
             }
         }

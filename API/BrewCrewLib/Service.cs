@@ -66,5 +66,10 @@ namespace BrewCrewLib
         {
             return _repo.GetAllOrdersByCustomerId(id).Result;
         }
+
+        public List<Order> GetAllOrdersByBreweryId(string id)
+        {
+            return _repo.GetAllOrdersByBreweryId(id).Result;
+        }
     }
 }

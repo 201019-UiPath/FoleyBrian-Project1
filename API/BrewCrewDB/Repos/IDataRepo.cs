@@ -42,5 +42,10 @@ namespace BrewCrewDB.Repos
         {
             return context.Orders.Where(x => x.UserID == id).Include(x => x.LineItems).ThenInclude(y => y.Beer).ToListAsync();
         }
+
+        public Task<List<Order>> GetAllOrdersByBreweryId(string id)
+        {
+            return context.Orders.Where(x => x.BreweryID == id).Include(x => x.LineItems).ThenInclude(y => y.Beer).ToListAsync();
+        }
     }
 }
