@@ -897,3 +897,78 @@
 2020-11-14 13:48:53.075 -07:00 [INF] Successfully retrieved brewery manager 1
 2020-11-14 13:48:53.185 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
 2020-11-14 13:49:00.012 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 14:27:54.676 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 14:27:55.207 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 14:27:55.815 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 14:28:15.620 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 14:30:00.039 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 14:30:00.311 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 14:59:47.877 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 14:59:48.453 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 14:59:48.943 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:00:10.156 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:02:53.187 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:02:53.473 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:02:53.670 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:02:57.712 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:06:57.498 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:06:57.984 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:06:58.798 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:07:02.735 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:07:45.276 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:07:45.560 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:07:45.667 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:07:48.954 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:09:39.105 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:09:39.409 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:09:39.860 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:09:45.091 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:10:27.290 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:10:27.575 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:10:27.689 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:10:30.617 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:13:11.361 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:13:12.087 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:13:12.481 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:13:19.655 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:17:39.253 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:17:39.648 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:17:40.089 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:17:43.414 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:18:57.580 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:18:58.025 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:18:58.302 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:19:01.872 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:24:02.767 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:24:03.149 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:24:03.675 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:24:07.348 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:25:21.756 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:25:22.099 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:25:22.509 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:25:25.747 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:29:43.627 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:29:44.256 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:29:45.484 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:29:51.307 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:34:06.302 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:34:06.592 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:34:06.918 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:34:12.223 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:34:50.883 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:34:51.547 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:34:52.601 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:34:56.787 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:38:03.749 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:38:09.209 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:38:09.358 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:38:10.099 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:38:13.375 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:39:32.010 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:39:32.347 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:39:32.453 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:39:35.902 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:40:16.153 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 15:40:16.638 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 15:40:17.082 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 15:40:20.866 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e

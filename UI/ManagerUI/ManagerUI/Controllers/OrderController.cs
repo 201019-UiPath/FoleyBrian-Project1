@@ -5,6 +5,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -33,7 +34,7 @@ namespace ManagerUI.Controllers
                         orderjsonString.Wait();
 
                         var dbOrder = JsonConvert.DeserializeObject<List<Order>>(orderjsonString.Result);
-
+                        HttpContext.Session.SetObject("order", dbOrder);
                         return View(dbOrder);
                     }
                 }
@@ -41,5 +42,39 @@ namespace ManagerUI.Controllers
             }
             return View();
         }
+
+        public IActionResult SortDateAsc()
+        {
+            List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            order = order.OrderBy(x => x.Date).ToList();
+            foreach (var item in order.OrderBy(o => o.Date));
+            return View("Orders",order);
+        }
+
+        public IActionResult SortDateDesc()
+        {
+            List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            order = order.OrderByDescending(x => x.Date).ToList();
+            foreach (var item in order.OrderBy(o => o.Date)) ;
+            return View("Orders",order);
+        }
+
+        public IActionResult SortTotalAsc()
+        {
+            List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            order = order.OrderBy(x => x.TotalPrice).ToList();
+            foreach (var item in order.OrderBy(o => o.TotalPrice));
+            return View("Orders",order);
+        }
+
+        public IActionResult SortTotalDesc()
+        {
+            List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            order = order.OrderByDescending(x => x.TotalPrice).ToList();
+            foreach (var item in order.OrderBy(o => o.TotalPrice)) ;
+            return View("Orders", order);
+        }
     }
+
+    
 }

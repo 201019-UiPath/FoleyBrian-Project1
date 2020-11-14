@@ -7,6 +7,20 @@
 
 <h1>Order History</h1>
 
+<div>
+    <span>
+        <a asp-action="SortDateDesc">Date Desc  |</a>
+    </span>
+    <span>
+        <a asp-action="SortDateAsc">Date Asc  |</a>
+    </span>
+    <span>
+        <a asp-action="SortTotalDesc">Total Desc  |</a>
+    </span>
+    <span>
+        <a asp-action="SortTotalAsc">Total Asc</a>
+    </span>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -17,7 +31,7 @@
                 Table Number
             </th>
             <th>
-                Total Cost
+                Total
             </th>
             <th>
                 Beer Name
@@ -37,19 +51,19 @@
     <tbody>
         @foreach (var order in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => order.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => order.TableNumber)
-            </td>
-            <td>
-                $@Html.DisplayFor(modelItem => order.TotalPrice)
-            </td>
-        </tr>
-                @foreach (var item in order.LineItems)
-                {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => order.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => order.TableNumber)
+                </td>
+                <td>
+                    $@Html.DisplayFor(modelItem => order.TotalPrice)
+                </td>
+            </tr>
+            @foreach (var item in order.LineItems)
+            {
                 <tr>
                     <td>
                     </td>
@@ -70,8 +84,8 @@
                         $@Html.DisplayFor(modelItem => item.Beer.Price)
                     </td>
                 </tr>
-                }
-         }
+            }
+        }
 
     </tbody>
 </table>
