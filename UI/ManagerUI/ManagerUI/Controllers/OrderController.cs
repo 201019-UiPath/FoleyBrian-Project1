@@ -4,6 +4,7 @@ using ManagerUI.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
+using System.Collections.Generic;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -31,7 +32,7 @@ namespace ManagerUI.Controllers
                         var orderjsonString = orderResult.Content.ReadAsStringAsync();
                         orderjsonString.Wait();
 
-                        var dbOrder = JsonConvert.DeserializeObject<User>(orderjsonString.Result);
+                        var dbOrder = JsonConvert.DeserializeObject<List<Order>>(orderjsonString.Result);
 
                         return View(dbOrder);
                     }

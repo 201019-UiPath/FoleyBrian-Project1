@@ -14,6 +14,12 @@
                 @Html.DisplayNameFor(model => model.Date)
             </th>
             <th>
+                Table Number
+            </th>
+            <th>
+                Total Cost
+            </th>
+            <th>
                 Beer Name
             </th>
             <th>
@@ -21,9 +27,6 @@
             </th>
             <th>
                 IBU
-            </th>
-            <th>
-                Keg
             </th>
             <th>
                 Price
@@ -34,35 +37,40 @@
     <tbody>
         @foreach (var order in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => order.Date)
-                    @foreach (var item in order.LineItems)
-                    {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Beer.Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Beer.ABV)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Beer.IBU)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Beer.Keg)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Beer.Price)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                        </td>
-                    </tr>
-                    }
-               </td>
-          </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => order.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => order.TableNumber)
+            </td>
+            <td>
+                $@Html.DisplayFor(modelItem => order.TotalPrice)
+            </td>
+        </tr>
+                @foreach (var item in order.LineItems)
+                {
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Beer.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Beer.ABV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Beer.IBU)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => item.Beer.Price)
+                    </td>
+                </tr>
+                }
          }
 
     </tbody>
