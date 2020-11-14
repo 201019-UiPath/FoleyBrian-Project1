@@ -34,7 +34,6 @@ namespace BrewCrewDB.Repos
 
         public Task<List<Beer>> GetAllBeersByBreweryId(string id)
         {
-            //Task<List
             return context.Beers.Where(x => x.BreweryID == id).ToListAsync();
         }
 

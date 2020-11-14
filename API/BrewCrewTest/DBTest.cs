@@ -128,6 +128,7 @@ namespace BrewCrewTest
                 Type = "Ale",
                 ABV = 9.5,
                 IBU = 44,
+                BreweryID = "1",
             },
 
             new Beer()
@@ -137,6 +138,7 @@ namespace BrewCrewTest
                 Type = "Stout",
                 ABV = 9.5,
                 IBU = 33,
+                BreweryID = "2"
             }
         };
 
@@ -147,6 +149,7 @@ namespace BrewCrewTest
                 ID = "1",
                 Date = DateTime.Now,
                 TableNumber = 1,
+                UserID = "1"
             },
 
             new Order()
@@ -154,6 +157,7 @@ namespace BrewCrewTest
                 ID = "2",
                 Date = DateTime.Now,
                 TableNumber = 2,
+                UserID = "2"
             }
         };
 
@@ -470,6 +474,44 @@ namespace BrewCrewTest
             {
                Assert.Equal("customer", user.Type);
             }
+        }
+
+        [Fact]
+        public void TestGetAllBeersByBreweryId()
+        {
+            //Arrange
+            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllBeersByBreweryId").Options;
+            using var testContext = new BrewCrewContext(options);
+
+            Seed(testContext);
+
+            //Act
+            using var assertContext = new BrewCrewContext(options);
+            _breweryRepo = new BreweryRepo(assertContext);
+            var result = _breweryRepo.GetAllBeersByBreweryId("1");
+
+            //Assert
+            Assert.NotNull(result.Result);
+            Assert.Equal(1, result.Result.Count);
+        }
+
+        [Fact]
+        public void TestGetAllOrdersByCustomerId()
+        {
+            //Arrange
+            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllOrdersByCustomerId").Options;
+            using var testContext = new BrewCrewContext(options);
+
+            Seed(testContext);
+
+            //Act
+            using var assertContext = new BrewCrewContext(options);
+            _orderRepo = new OrderRepo(assertContext);
+            var result = _orderRepo.GetAllOrdersByCustomerId("1");
+
+            //Assert
+            Assert.NotNull(result.Result);
+            Assert.Equal(1, result.Result.Count);
         }
 
         [Fact]
