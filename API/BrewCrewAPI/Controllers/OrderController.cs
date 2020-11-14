@@ -108,20 +108,20 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{id}")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteOrder(Order order)
+        public IActionResult DeleteOrder(string id)
         {
             try
             {
-                _service.DeleteResource(order);
-                Log.Information($"Successfully deleted order {order.ID}");
-                return CreatedAtAction("DeleteBrewery", order);
+                _service.DeleteResource(id);
+                Log.Information($"Successfully deleted order {id}");
+                return CreatedAtAction("DeleteBrewery", id);
             }
             catch (Exception e)
             {
-                Log.Warning($"Unable to delete order - {order.ID} {e.Message}");
+                Log.Warning($"Unable to delete order - {id} {e.Message}");
                 return BadRequest();
             }
         }

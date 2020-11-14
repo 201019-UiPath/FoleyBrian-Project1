@@ -19,7 +19,7 @@ namespace BrewCrewDB.Repos
         public abstract Task<TEntity> GetById(string id);
         public abstract void Add(TEntity entity);
         public abstract void Update(TEntity entity);
-        public abstract void Delete(TEntity entity);
+        public abstract void Delete(string id);
 
 
         public Task<User> GetUserByEmail(string email)

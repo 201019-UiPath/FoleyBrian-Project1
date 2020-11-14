@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace BrewCrewDB.Models
+namespace ManagerUI.Models
 {
     
     public class Brewery

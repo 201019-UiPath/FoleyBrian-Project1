@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace BrewCrewDB.Models
+namespace ManagerUI.Models
 {
     public class User
     {

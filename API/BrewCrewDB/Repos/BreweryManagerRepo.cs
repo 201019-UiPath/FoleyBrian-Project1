@@ -22,9 +22,10 @@ namespace BrewCrewDB.Repos
             context.SaveChanges();
         }
 
-        override public void Delete(BreweryManager entity)
+        override public void Delete(string id)
         {
-            context.Remove(entity);
+            BreweryManager breweryManager = new BreweryManager {ID = id};
+            context.Remove(breweryManager);
             context.SaveChanges();
         }
 

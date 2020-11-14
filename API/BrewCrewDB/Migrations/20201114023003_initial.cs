@@ -164,9 +164,9 @@ namespace BrewCrewDB.Migrations
                 columns: new[] { "ID", "Address", "City", "Name", "State", "Zip" },
                 values: new object[,]
                 {
-                    { "42e1c629-ceb9-44d7-a555-e16a30232b4a", "123 Beer Lane", "East Helena", "Missouri River Brewing Company", "MT", (short)12345 },
-                    { "d831ea52-a9cc-4f3b-adcd-c2890809a247", "123 Stout Lane", "Helena", "Lewis and Clark Brewery", "MT", (short)12345 },
-                    { "30042111-ab04-4f86-9ecd-cdb342276b65", "123 Ale Lane", "Helena", "Bridger Brewing", "MT", (short)12345 }
+                    { "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", "123 Beer Lane", "East Helena", "Missouri River Brewing Company", "MT", (short)12345 },
+                    { "3f855e2f-394e-4bb2-beab-0b751b892194", "123 Stout Lane", "Helena", "Lewis and Clark Brewery", "MT", (short)12345 },
+                    { "89d7e7a2-182f-4241-865a-912d67dedebd", "123 Ale Lane", "Helena", "Bridger Brewing", "MT", (short)12345 }
                 });
 
             migrationBuilder.InsertData(
@@ -182,16 +182,16 @@ namespace BrewCrewDB.Migrations
             migrationBuilder.InsertData(
                 table: "Beers",
                 columns: new[] { "ID", "ABV", "BreweryID", "IBU", "Keg", "Name", "Price", "Type" },
-                values: new object[] { "1", 9.1999999999999993, "42e1c629-ceb9-44d7-a555-e16a30232b4a", (short)33, 100, "Beer", 4.0, "stout" });
+                values: new object[] { "1", 9.1999999999999993, "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", (short)33, 100, "Beer", 4.0, "stout" });
 
             migrationBuilder.InsertData(
                 table: "BreweryManagers",
                 columns: new[] { "ID", "BreweryID", "UserID" },
                 values: new object[,]
                 {
-                    { "1", "42e1c629-ceb9-44d7-a555-e16a30232b4a", "1" },
-                    { "2", "d831ea52-a9cc-4f3b-adcd-c2890809a247", "2" },
-                    { "3", "30042111-ab04-4f86-9ecd-cdb342276b65", "3" }
+                    { "1", "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", "1" },
+                    { "2", "3f855e2f-394e-4bb2-beab-0b751b892194", "2" },
+                    { "3", "89d7e7a2-182f-4241-865a-912d67dedebd", "3" }
                 });
 
             migrationBuilder.CreateIndex(

@@ -21,15 +21,16 @@ namespace BrewCrewDB.Repos
             context.SaveChanges();
         }
 
-        override public void Delete(Brewery entity)
+        override public void Delete(string id)
         {
-            context.Remove(entity);
+            Brewery brewery = new Brewery {ID = id};
+            context.Remove(brewery);
             context.SaveChanges();
         }
 
         override public Task<Brewery> GetById(string id)
         {
-            return context.Breweries.SingleAsync(x => x.ID == id);
+            return context.Breweries.Where(x => x.ID == id).Include("Beers").Include("Orders").Include("BreweryManagers").FirstAsync();
         }
 
         override public Task<List<Brewery>> GetAll()

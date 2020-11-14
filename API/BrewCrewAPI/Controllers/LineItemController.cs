@@ -91,20 +91,20 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{id}")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteLineItem(LineItem lineitem)
+        public IActionResult DeleteLineItem(string id)
         {
             try
             {
-                _service.DeleteResource(lineitem);
-                Log.Information($"Successfully deleted line item {lineitem.ID}");
-                return CreatedAtAction("DeleteLineItem", lineitem);
+                _service.DeleteResource(id);
+                Log.Information($"Successfully deleted line item {id}");
+                return CreatedAtAction("DeleteLineItem", id);
             }
             catch (Exception e)
             {
-                Log.Warning($"Unable to delete line item - {e.Message}");
+                Log.Warning($"Unable to delete line item - {id} {e.Message}");
                 return BadRequest();
             }
         }

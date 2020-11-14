@@ -1,0 +1,50 @@
+﻿@model ManagerUI.Models.Beer
+@{
+    ViewData["Title"] = "Beers Page";
+    Layout = "~/Views/Shared/_LoggedInLayout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add Beer</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddBeer">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control"/>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ABV" class="control-label"></label>
+                <input asp-for="ABV" class="form-control"/>
+                <span asp-validation-for="ABV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IBU" class="control-label"></label>
+                <input asp-for="IBU" class="form-control"/>
+                <span asp-validation-for="IBU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control"/>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Keg" class="control-label"></label>
+                <input asp-for="Keg" class="form-control"/>
+                <span asp-validation-for="Keg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

@@ -7,7 +7,7 @@ namespace BrewCrewLib
     public interface IService<T>
     {
         void AddResource(T entity);
-        void DeleteResource(T entity);
+        void DeleteResource(string id);
         T GetResource(string id);
         List<T> GetAllResources();
         void UpdateResource(T entity);

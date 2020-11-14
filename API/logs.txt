@@ -479,3 +479,334 @@
 2020-11-12 21:49:43.132 -07:00 [INF] Successfully retrieved all breweries
 2020-11-12 21:49:43.748 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
 2020-11-12 21:49:45.958 -07:00 [INF] Successfully retrieved all breweries
+2020-11-13 13:04:20.568 -07:00 [INF] Successfully retrieved all beers
+2020-11-13 13:04:22.350 -07:00 [INF] Successfully retrieved all beers
+2020-11-13 13:04:51.943 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 13:04:52.108 -07:00 [INF] Successfully retrieved all breweries
+2020-11-13 13:05:04.147 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:20.567 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:23.804 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:26.360 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:28.876 -07:00 [INF] Successfully retrieved all orders
+2020-11-13 13:05:31.142 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:36.690 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:43.290 -07:00 [INF] Successfully added order 507DEBA3-209A-46E7-9514-30F26846D670
+2020-11-13 13:05:44.785 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:05:46.554 -07:00 [INF] Successfully retrieved all orders
+2020-11-13 13:05:56.426 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:06:03.905 -07:00 [INF] Successfully added order 4F1A52B8-A3E2-43C5-B0D8-32B28D46E480
+2020-11-13 13:06:05.056 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:06:07.151 -07:00 [INF] Successfully retrieved all orders
+2020-11-13 13:06:25.891 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:06:27.921 -07:00 [INF] Successfully retrieved all orders
+2020-11-13 13:06:31.191 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 13:06:32.541 -07:00 [INF] Successfully retrieved all breweries
+2020-11-13 13:06:33.729 -07:00 [INF] Successfully retrieved beers by brewery Id 30042111-ab04-4f86-9ecd-cdb342276b65
+2020-11-13 13:06:34.722 -07:00 [INF] Successfully retrieved all breweries
+2020-11-13 13:06:35.678 -07:00 [INF] Successfully retrieved beers by brewery Id d831ea52-a9cc-4f3b-adcd-c2890809a247
+2020-11-13 13:06:36.504 -07:00 [INF] Successfully retrieved all breweries
+2020-11-13 13:06:37.265 -07:00 [INF] Successfully retrieved beers by brewery Id 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 16:31:00.040 -07:00 [WRN] Unable to retrieve user by email - foleyb25@gmail.com One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 16:31:57.720 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 16:33:34.824 -07:00 [WRN] Unable to retrieve user by email - safd One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 16:50:15.629 -07:00 [WRN] Unable to retrieve user by email - gsdf One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 16:50:31.452 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 16:51:08.535 -07:00 [WRN] Unable to retrieve user by email - foleyb25@gmail.com One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 16:51:16.950 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 16:51:19.101 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 16:52:41.473 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 17:32:05.819 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 17:32:45.255 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 17:33:39.469 -07:00 [WRN] Unable to retrieve user by email - dsfs One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 17:33:42.860 -07:00 [WRN] Unable to retrieve user by email - dsfs One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-13 17:47:16.188 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 18:24:34.409 -07:00 [INF] Successfully retrieved all beers
+2020-11-13 18:24:35.716 -07:00 [INF] Successfully retrieved all beers
+2020-11-13 18:58:19.590 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 18:58:26.498 -07:00 [INF] Successfully retrieved user 1AF0BED1-5AAB-4CD6-A251-33703F2BF7F6
+2020-11-13 18:58:38.452 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 18:58:42.794 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 18:58:59.342 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:00:26.955 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:01:57.485 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:02:56.577 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:03:11.223 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:07:07.912 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:09:20.650 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:13:37.426 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:13:46.340 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:16:04.298 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:22:09.971 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:22:10.222 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:22:10.354 -07:00 [INF] Successfully retrieved brewery 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 19:22:50.137 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:22:50.376 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:22:50.490 -07:00 [INF] Successfully retrieved brewery 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 19:26:45.802 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:26:46.107 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:26:46.273 -07:00 [INF] Successfully retrieved brewery 42e1c629-ceb9-44d7-a555-e16a30232b4a
+2020-11-13 19:31:49.769 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:31:50.064 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:31:50.219 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 19:32:22.389 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:32:22.631 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:32:22.749 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 19:37:10.937 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:37:11.175 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:37:11.289 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 19:46:12.098 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:48:23.557 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:51:11.588 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:55:41.740 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:56:16.725 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 19:56:33.562 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 19:56:42.756 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 20:48:42.018 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 20:48:53.011 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 20:48:53.149 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 20:51:03.648 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 20:51:03.946 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 20:51:04.063 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 20:55:39.529 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 20:55:39.807 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 20:55:39.927 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 20:59:16.310 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 20:59:16.580 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 20:59:16.691 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 21:00:04.680 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 21:00:04.949 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 21:00:05.066 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 21:31:31.698 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 21:31:32.000 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 21:31:32.115 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 21:31:34.200 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:10:46.650 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:10:46.953 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:10:47.069 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:10:50.959 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:11:08.783 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-13 22:12:37.437 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:12:37.704 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:12:37.813 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:12:40.031 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:14:06.188 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:14:06.456 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:14:06.563 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:14:08.333 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:15:18.957 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:15:19.251 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:15:19.360 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:15:21.201 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:18:05.581 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:18:05.856 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:18:05.967 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:18:07.746 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:18:12.160 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-13 22:18:44.979 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:18:45.248 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:18:45.358 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:18:47.444 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:19:08.876 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-13 22:21:22.119 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:21:22.435 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:21:22.544 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:21:24.563 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:21:32.026 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-13 22:23:10.688 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:23:10.960 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:23:11.072 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:23:13.262 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:23:15.254 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-13 22:23:59.623 -07:00 [INF] Successfully retrieved user 1
+2020-11-13 22:24:17.360 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-13 22:24:17.471 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-13 22:24:26.553 -07:00 [INF] Successfully retrieved beer 1
+2020-11-13 22:24:28.897 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:17:39.742 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:17:40.226 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:17:40.590 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:17:43.684 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:17:51.083 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:17:51.214 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:17:51.322 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:18:00.835 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:19:15.088 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:19:15.219 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:19:15.552 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:23:40.841 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:23:59.995 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:24:00.281 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:24:00.402 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:24:19.884 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:27:38.928 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:27:39.286 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:27:39.454 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:27:53.817 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:28:32.850 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:30:01.477 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:30:43.175 -07:00 [INF] Successfully updated beer 1
+2020-11-14 10:47:59.030 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:48:00.341 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:48:01.385 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:49:09.304 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:49:09.600 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:49:09.718 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:49:16.443 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:50:37.316 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:50:37.609 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:50:38.248 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:50:39.906 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:51:07.312 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:51:45.113 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:51:45.514 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:56:14.282 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:56:15.340 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:56:15.588 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:56:18.234 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:56:43.075 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 10:59:15.740 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 10:59:16.161 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 10:59:16.817 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 10:59:18.469 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 10:59:54.505 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:00:18.406 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:00:18.511 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:00:53.399 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:00:53.684 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:00:53.791 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:00:56.318 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:01:23.114 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:01:31.272 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:01:33.148 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:06:55.060 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:06:55.976 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:06:57.002 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:06:59.644 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:07:20.896 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:09:23.740 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:09:24.110 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:09:24.869 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:09:27.595 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:09:46.128 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:12:10.050 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:12:11.176 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:12:11.995 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:12:15.298 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:13:14.172 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:22:10.424 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:22:11.326 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:22:11.641 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:22:14.600 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:22:40.893 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:37:07.905 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:37:08.890 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:37:10.219 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:37:13.433 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:39:06.381 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:39:06.811 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:39:07.332 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:39:09.546 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:39:14.988 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:39:15.122 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:39:15.232 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:39:19.744 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:39:25.141 -07:00 [WRN] Unable to update beer -  Sequence contains no elements
+2020-11-14 11:39:25.273 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:39:25.385 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:45:23.301 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:45:23.935 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:45:24.730 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:52:04.461 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:52:05.295 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:52:06.010 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:52:54.156 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:52:54.547 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:52:54.659 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:52:57.363 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 11:54:35.833 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:54:36.119 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:54:36.418 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:55:28.232 -07:00 [INF] Successfully added beer 0bc86b11-b86b-44dc-b038-3335a5020657
+2020-11-14 11:55:36.794 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:55:36.901 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:56:40.485 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 11:56:40.802 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 11:56:40.913 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 11:56:46.329 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 12:01:46.226 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:01:46.761 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:01:47.889 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:01:52.231 -07:00 [INF] Successfully retrieved beer 0bc86b11-b86b-44dc-b038-3335a5020657
+2020-11-14 12:04:15.731 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:04:16.018 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:04:16.649 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:04:18.929 -07:00 [INF] Successfully retrieved beer 0bc86b11-b86b-44dc-b038-3335a5020657
+2020-11-14 12:05:01.799 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:05:02.079 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:05:02.191 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:05:06.786 -07:00 [INF] Successfully retrieved beer 0bc86b11-b86b-44dc-b038-3335a5020657
+2020-11-14 12:09:46.775 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:09:47.530 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:09:48.311 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:09:54.127 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 12:10:20.690 -07:00 [INF] Successfully updated beer 1
+2020-11-14 12:10:32.104 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:10:32.207 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:10:38.935 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 12:10:52.798 -07:00 [INF] Successfully updated beer 1
+2020-11-14 12:11:06.111 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:11:06.222 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:13:48.899 -07:00 [WRN] Unable to retrieve user by email - manager1@email.net One or more errors occurred. (An exception has been raised that is likely due to a transient failure.)
+2020-11-14 12:14:00.494 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:14:01.184 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:14:02.103 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:14:06.934 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 12:14:18.701 -07:00 [INF] Successfully updated beer 1
+2020-11-14 12:14:18.856 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:14:18.965 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:17:53.008 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:17:53.865 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:17:54.883 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:18:01.190 -07:00 [INF] Successfully retrieved beer 1
+2020-11-14 12:18:09.410 -07:00 [INF] Successfully updated beer 1
+2020-11-14 12:18:09.564 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:18:09.678 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:46:48.173 -07:00 [INF] Successfully retrieved user 1
+2020-11-14 12:46:49.187 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:46:50.325 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:46:57.072 -07:00 [INF] Successfully deleted beer 1
+2020-11-14 12:46:57.231 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:46:57.341 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:47:12.223 -07:00 [INF] Successfully deleted beer 0bc86b11-b86b-44dc-b038-3335a5020657
+2020-11-14 12:47:12.362 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:47:12.475 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:47:40.345 -07:00 [INF] Successfully added beer d77d3838-1c80-420f-ae62-ed67841136bb
+2020-11-14 12:47:40.488 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:47:40.597 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:47:51.153 -07:00 [INF] Successfully retrieved beer d77d3838-1c80-420f-ae62-ed67841136bb
+2020-11-14 12:48:37.583 -07:00 [INF] Successfully updated beer d77d3838-1c80-420f-ae62-ed67841136bb
+2020-11-14 12:48:37.724 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:48:37.835 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:49:18.209 -07:00 [WRN] Unable to retrieve user by email - customer1@email.net One or more errors occurred. (Enumerator failed to MoveNextAsync.)
+2020-11-14 12:49:54.062 -07:00 [INF] Successfully added user 9815F8B8-4FEF-4527-806D-1D3252504CC6
+2020-11-14 12:49:54.223 -07:00 [INF] Successfully retrieved all breweries
+2020-11-14 12:49:56.340 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:06.095 -07:00 [INF] Successfully retrieved all orders
+2020-11-14 12:50:07.269 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:11.538 -07:00 [INF] Successfully added order A4215757-69E5-42BA-B66F-D4ECB1F4D0D8
+2020-11-14 12:50:12.960 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:14.205 -07:00 [INF] Successfully retrieved all orders
+2020-11-14 12:50:16.078 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:26.948 -07:00 [WRN] Unable to delete beer - d77d3838-1c80-420f-ae62-ed67841136bb An error occurred while updating the entries. See the inner exception for details.
+2020-11-14 12:50:27.090 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:50:27.208 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:30.590 -07:00 [WRN] Unable to delete beer - d77d3838-1c80-420f-ae62-ed67841136bb An error occurred while updating the entries. See the inner exception for details.
+2020-11-14 12:50:30.723 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:50:30.833 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:50:57.034 -07:00 [INF] Successfully retrieved all breweries
+2020-11-14 12:50:58.388 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:51:24.086 -07:00 [INF] Successfully added beer a2002843-1ebd-4db3-8cd6-f2e2aa13f7b9
+2020-11-14 12:51:24.259 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-14 12:51:24.374 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 12:51:28.322 -07:00 [INF] Successfully retrieved all breweries
+2020-11-14 12:51:29.166 -07:00 [INF] Successfully retrieved beers by brewery Id eb9300b3-3ff9-42a0-9968-a50d0c882e0e

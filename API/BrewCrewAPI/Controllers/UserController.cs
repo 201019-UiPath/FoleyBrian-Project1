@@ -124,20 +124,20 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{id}")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteUser(User user)
+        public IActionResult DeleteUser(string id)
         {
             try
             {
-                _service.DeleteResource(user);
-                Log.Information($"Successfully deleted user {user.ID}");
-                return CreatedAtAction("DeleteUser", user);
+                _service.DeleteResource(id);
+                Log.Information($"Successfully deleted user {id}");
+                return CreatedAtAction("DeleteUser", id);
             }
             catch (Exception e)
             {
-                Log.Warning($"Unable to delete user - {user.ID} : {e.Message} ");
+                Log.Warning($"Unable to delete user - {id} : {e.Message} ");
                 return BadRequest();
             }
         }

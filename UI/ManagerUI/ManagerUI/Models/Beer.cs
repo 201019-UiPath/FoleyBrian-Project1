@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BrewCrewDB.Models
+namespace ManagerUI.Models
 {
     public class Beer
     {

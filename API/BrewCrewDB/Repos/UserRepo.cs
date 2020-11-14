@@ -21,9 +21,10 @@ namespace BrewCrewDB.Repos
             context.SaveChanges();
         }
 
-        override public void Delete(User entity)
+        override public void Delete(string id)
         {
-            context.Remove(entity);
+            User user = new User {ID = id};
+            context.Remove(user);
             context.SaveChanges();
         }
 

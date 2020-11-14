@@ -22,9 +22,9 @@ namespace BrewCrewLib
         }
 
 
-        public void DeleteResource(T entity)
+        public void DeleteResource(string id)
         {
-            _repo.Delete(entity);
+            _repo.Delete(id);
         }
 
 

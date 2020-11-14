@@ -1,6 +1,5 @@
 using System;
 using Xunit;
-using BrewCrewLib;
 using BrewCrewDB.Models;
 using BrewCrewDB;
 using BrewCrewDB.Repos;
@@ -12,7 +11,6 @@ namespace BrewCrewTest
 {
     public class DBTest
     {
-        //IDataRepo<BeerItem> _beerItemRepo;
         IDataRepo<Beer> _beerRepo;
         IDataRepo<BreweryManager> _breweryManagerRepo;
         IDataRepo<Brewery> _breweryRepo;
@@ -62,14 +60,6 @@ namespace BrewCrewTest
             TableNumber = 1,
             TotalPrice = 4.00
         };
-
-        //private readonly BeerItem TestBeerItem = new BeerItem()
-        //{
-        //    ID = "1",
-        //    BreweryID = "1",
-        //    BeerID = "1",
-        //    Keg = 100
-        //};
 
         private readonly BreweryManager TestBreweryManager = new BreweryManager()
         {
@@ -166,25 +156,6 @@ namespace BrewCrewTest
                 TableNumber = 2,
             }
         };
-
-        //private readonly List<BeerItem> TestBeerItems = new List<BeerItem>()
-        //{
-        //    new BeerItem()
-        //    {
-        //    ID = "2",
-        //    BreweryID = "1",
-        //    BeerID = "1",
-        //    Keg = 100
-        //    },
-
-        //    new BeerItem()
-        //    {
-        //    ID = "3",
-        //    BreweryID = "1",
-        //    BeerID = "1",
-        //    Keg = 100
-        //    }
-        //};
 
         private readonly List<BreweryManager> TestBreweryManagers = new List<BreweryManager>()
         {
@@ -315,22 +286,6 @@ namespace BrewCrewTest
             Assert.NotNull(assertContext.Breweries.SingleAsync(c => c.ID == TestBrewery.ID));
         }
 
-        //[Fact]
-        //public void TestAddBeerItem()
-        //{
-        //    //Arrange
-        //    var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestAddBeerItem").Options;
-        //    using var testContext = new BrewCrewContext(options);
-        //    _beerItemRepo = new BeerItemRepo(testContext);
-
-        //    //Act
-        //    _beerItemRepo.Add(TestBeerItem);
-
-        //    //Assert
-        //    using var assertContext = new BrewCrewContext(options);
-        //    Assert.NotNull(assertContext.Breweries.SingleAsync(c => c.ID == TestBeerItem.ID));
-        //}
-
         [Fact]
         public void TestAddLineItem()
         {
@@ -438,25 +393,6 @@ namespace BrewCrewTest
             Assert.NotNull(result.Result);
             Assert.Equal(2, result.Result.Count);
         }
-
-        //[Fact]
-        //public void TestGetBeerItems()
-        //{
-        //    //Arrange
-        //    var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetBeerItems").Options;
-        //    using var testContext = new BrewCrewContext(options);
-
-        //    Seed(testContext);
-
-        //    //Act
-        //    using var assertContext = new BrewCrewContext(options);
-        //    _beerItemRepo = new BeerItemRepo(assertContext);
-        //    var result = _beerItemRepo.GetAll();
-
-        //    //Assert
-        //    Assert.NotNull(result.Result);
-        //    Assert.Equal(2, result.Result.Count);
-        //}
 
         [Fact]
         public void TestGetLineItems()

@@ -21,9 +21,10 @@ namespace BrewCrewDB.Repos
             context.SaveChanges();
         }
 
-        override public void Delete(Beer entity)
+        override public void Delete(string id)
         {
-            context.Remove(entity);
+            Beer beer = new Beer {ID = id};
+            context.Remove(beer);
             context.SaveChanges();
         }
 
@@ -47,6 +48,7 @@ namespace BrewCrewDB.Repos
                 entityToUpdate.IBU = entity.IBU;
                 entityToUpdate.Price = entity.Price;
                 entityToUpdate.Type = entity.Type;
+                entityToUpdate.Keg = entity.Keg;
                 context.SaveChanges();
             }
             else

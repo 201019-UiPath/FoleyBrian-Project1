@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace ManagerUI
 {
@@ -23,6 +25,22 @@ namespace ManagerUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            services.AddAuthentication("CookieAuthentication")
+                .AddCookie("CookieAuthentication", config =>
+                {
+                    config.Cookie.Name = "ManagerLoginCookie";
+                    config.LoginPath = "/Login/Login";
+                });
+
+            services.AddAuthorization();
             services.AddControllersWithViews();
         }
 
@@ -46,12 +64,28 @@ namespace ManagerUI
 
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Beer}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Login}");
             });
+        }
+    }
+
+    public static class SessionExtensions
+    {
+        public static void SetObject(this ISession session, string key, object value)
+        {
+            session.SetString(key, JsonConvert.SerializeObject(value));
+        }
+
+        public static T GetObject<T>(this ISession session, string key)
+        {
+            var value = session.GetString(key);
+            return value == null ? default(T) : JsonConvert.DeserializeObject<T>(value);
         }
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace BrewCrewDB.Models
+namespace ManagerUI.Models
 {
     public class Order
     {

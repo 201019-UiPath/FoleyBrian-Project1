@@ -21,9 +21,10 @@ namespace BrewCrewDB.Repos
             context.SaveChanges();
         }
 
-        override public void Delete(LineItem entity)
+        override public void Delete(string id)
         {
-            context.Remove(entity);
+            LineItem lineItem = new LineItem {ID = id};
+            context.Remove(lineItem);
             context.SaveChanges();
         }
 

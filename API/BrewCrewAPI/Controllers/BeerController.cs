@@ -107,20 +107,20 @@ namespace BrewCrewAPI.Controllers
             }
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Delete/{id}")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        public IActionResult DeleteBeer(Beer beer)
+        public IActionResult DeleteBeer(string id)
         {
             try
             {
-                _service.DeleteResource(beer);
-                Log.Information($"Successfully deleted beer {beer.ID}");
-                return CreatedAtAction("DeleteBeer", beer);
+                _service.DeleteResource(id);
+                Log.Information($"Successfully deleted beer {id}");
+                return CreatedAtAction("DeleteBeer", id);
             }
             catch (Exception e)
             {
-                Log.Warning($"Unable to delete beer - {beer.ID} {e.Message}");
+                Log.Warning($"Unable to delete beer - {id} {e.Message}");
                 return BadRequest();
             }
         }

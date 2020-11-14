@@ -1,5 +1,8 @@
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-namespace BrewCrewDB.Models
+namespace ManagerUI.Models
 {
     public class BreweryManager
     {

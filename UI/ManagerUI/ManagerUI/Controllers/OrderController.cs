@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ManagerUI.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Text;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,8 +11,9 @@ namespace ManagerUI.Controllers
 {
     public class OrderController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        const string url = "https://localhost:47720/";
+
+        public IActionResult Orders()
         {
             return View();
         }
