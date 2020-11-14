@@ -74,19 +74,6 @@ namespace BrewCrewDB.Migrations
                     b.HasIndex("BreweryID");
 
                     b.ToTable("Beers");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = "1",
-                            ABV = 9.1999999999999993,
-                            BreweryID = "eb9300b3-3ff9-42a0-9968-a50d0c882e0e",
-                            IBU = (short)33,
-                            Keg = 100,
-                            Name = "Beer",
-                            Price = 4.0,
-                            Type = "stout"
-                        });
                 });
 
             modelBuilder.Entity("BrewCrewDB.Models.Brewery", b =>
@@ -116,7 +103,7 @@ namespace BrewCrewDB.Migrations
                     b.HasData(
                         new
                         {
-                            ID = "eb9300b3-3ff9-42a0-9968-a50d0c882e0e",
+                            ID = "4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb",
                             Address = "123 Beer Lane",
                             City = "East Helena",
                             Name = "Missouri River Brewing Company",
@@ -125,7 +112,7 @@ namespace BrewCrewDB.Migrations
                         },
                         new
                         {
-                            ID = "3f855e2f-394e-4bb2-beab-0b751b892194",
+                            ID = "f2cc2e25-fdd3-482e-bc62-f71a0de09515",
                             Address = "123 Stout Lane",
                             City = "Helena",
                             Name = "Lewis and Clark Brewery",
@@ -134,7 +121,7 @@ namespace BrewCrewDB.Migrations
                         },
                         new
                         {
-                            ID = "89d7e7a2-182f-4241-865a-912d67dedebd",
+                            ID = "874036d4-1ac1-4021-bf04-242255d5135c",
                             Address = "123 Ale Lane",
                             City = "Helena",
                             Name = "Bridger Brewing",
@@ -166,19 +153,19 @@ namespace BrewCrewDB.Migrations
                         new
                         {
                             ID = "1",
-                            BreweryID = "eb9300b3-3ff9-42a0-9968-a50d0c882e0e",
+                            BreweryID = "4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb",
                             UserID = "1"
                         },
                         new
                         {
                             ID = "2",
-                            BreweryID = "3f855e2f-394e-4bb2-beab-0b751b892194",
+                            BreweryID = "f2cc2e25-fdd3-482e-bc62-f71a0de09515",
                             UserID = "2"
                         },
                         new
                         {
                             ID = "3",
-                            BreweryID = "89d7e7a2-182f-4241-865a-912d67dedebd",
+                            BreweryID = "874036d4-1ac1-4021-bf04-242255d5135c",
                             UserID = "3"
                         });
                 });
@@ -299,7 +286,7 @@ namespace BrewCrewDB.Migrations
                         .WithMany("BreweryManagers")
                         .HasForeignKey("BreweryID");
 
-                    b.HasOne("BrewCrewDB.Models.User", "user")
+                    b.HasOne("BrewCrewDB.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserID");
                 });

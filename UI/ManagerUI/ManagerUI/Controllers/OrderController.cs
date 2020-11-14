@@ -46,6 +46,10 @@ namespace ManagerUI.Controllers
         public IActionResult SortDateAsc()
         {
             List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            if (order == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             order = order.OrderBy(x => x.Date).ToList();
             foreach (var item in order.OrderBy(o => o.Date));
             return View("Orders",order);
@@ -54,6 +58,10 @@ namespace ManagerUI.Controllers
         public IActionResult SortDateDesc()
         {
             List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            if (order == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             order = order.OrderByDescending(x => x.Date).ToList();
             foreach (var item in order.OrderBy(o => o.Date)) ;
             return View("Orders",order);
@@ -62,6 +70,10 @@ namespace ManagerUI.Controllers
         public IActionResult SortTotalAsc()
         {
             List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            if (order == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             order = order.OrderBy(x => x.TotalPrice).ToList();
             foreach (var item in order.OrderBy(o => o.TotalPrice));
             return View("Orders",order);
@@ -70,11 +82,13 @@ namespace ManagerUI.Controllers
         public IActionResult SortTotalDesc()
         {
             List<Order> order = HttpContext.Session.GetObject<List<Order>>("order");
+            if (order == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             order = order.OrderByDescending(x => x.TotalPrice).ToList();
             foreach (var item in order.OrderBy(o => o.TotalPrice)) ;
             return View("Orders", order);
         }
-    }
-
-    
+    }  
 }

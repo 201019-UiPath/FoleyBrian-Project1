@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ManagerUI.Models
 {
     public class LineItem
@@ -6,11 +8,5 @@ namespace ManagerUI.Models
         public string OrderID {get;set;}
         public string BeerID {get;set;}
         public Beer Beer {get;set;}
-
-        //what is the the structure of a database
-        //schema
-        //tables
-        //indexes
-        //triggers
     }
 }

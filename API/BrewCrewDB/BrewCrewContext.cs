@@ -23,9 +23,6 @@ namespace BrewCrewDB
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            //modelBuilder.Entity<Beer>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
-            //modelBuilder.Entity<Admin>().Property(x => x.ID).HasDefaultValue(Guid.NewGuid().ToString()).ValueGeneratedOnAdd();
             string guid1 = Guid.NewGuid().ToString();
             string guid2 = Guid.NewGuid().ToString();
             string guid3 = Guid.NewGuid().ToString();
@@ -39,7 +36,6 @@ namespace BrewCrewDB
                 }
             );
 
-            //Can delete this below when UI is setup
             modelBuilder.Entity<Brewery>().HasData(
                     new Brewery()
                     {
@@ -138,20 +134,6 @@ namespace BrewCrewDB
                         ID = "3",
                         BreweryID = guid3,
                         UserID = "3"
-                    }
-            );
-
-            modelBuilder.Entity<Beer>().HasData(
-                    new Beer()
-                    {
-                        ID = "1",
-                        Name = "Beer",
-                        ABV = 9.2,
-                        IBU = 33,
-                        Price = 4.00,
-                        Type = "stout",
-                        BreweryID = guid1,
-                        Keg = 100
                     }
             );
         }

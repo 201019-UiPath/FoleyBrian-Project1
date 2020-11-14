@@ -6,11 +6,5 @@ namespace BrewCrewDB.Models
         public string OrderID {get;set;}
         public string BeerID {get;set;}
         public Beer Beer {get;set;}
-
-        //what is the the structure of a database
-        //schema
-        //tables
-        //indexes
-        //triggers
     }
 }

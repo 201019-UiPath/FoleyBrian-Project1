@@ -1,5 +1,4 @@
-﻿using System;
-using BrewCrewDB.Models;
+﻿using BrewCrewDB.Models;
 using System.Collections.Generic;
 
 namespace BrewCrewLib

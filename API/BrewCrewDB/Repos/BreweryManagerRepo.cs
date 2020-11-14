@@ -15,7 +15,6 @@ namespace BrewCrewDB.Repos
 
         }
 
-
         override public void Add(BreweryManager entity)
         {
             context.BreweryManagers.AddAsync(entity);
@@ -36,7 +35,7 @@ namespace BrewCrewDB.Repos
 
         override public Task<List<BreweryManager>> GetAll()
         {
-            return context.BreweryManagers.Select(x => x).Include("Users").ToListAsync();
+            return context.BreweryManagers.Select(x => x).Include("User").ToListAsync();
         }
 
         override public void Update(BreweryManager entity)

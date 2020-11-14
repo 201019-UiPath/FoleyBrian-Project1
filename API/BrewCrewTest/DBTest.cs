@@ -79,7 +79,7 @@ namespace BrewCrewTest
         {
             new User()
             {
-                ID = "3",
+                ID = "1",
                 FName = "Michael",
                 LName = "Scott",
                 Email = "manager1@email.net",
@@ -88,7 +88,7 @@ namespace BrewCrewTest
 
             new User()
             {
-                ID = "4",
+                ID = "2",
                 FName = "Dwight",
                 LName = "Schrute",
                 Email = "customer1@email.net",
@@ -100,7 +100,7 @@ namespace BrewCrewTest
         {
             new Brewery()
             {
-                ID = "2",
+                ID = "1",
                 Name = "Lewis and Clark Brewery",
                 State = "MT",
                 City = "Helena",
@@ -110,7 +110,7 @@ namespace BrewCrewTest
 
             new Brewery()
             {
-                ID = "3",
+                ID = "2",
                 Name = "Missouri River Brewing Co",
                 State = "MT",
                 City = "East Helena",
@@ -123,7 +123,7 @@ namespace BrewCrewTest
         {
             new Beer()
             {
-                ID = "2",
+                ID = "1",
                 Name = "Vanilla Creamsickle",
                 Type = "Ale",
                 ABV = 9.5,
@@ -132,7 +132,7 @@ namespace BrewCrewTest
 
             new Beer()
             {
-                ID = "3",
+                ID = "2",
                 Name = "Miners Gold",
                 Type = "Stout",
                 ABV = 9.5,
@@ -144,14 +144,14 @@ namespace BrewCrewTest
         {
             new Order()
             {
-                ID = "2",
+                ID = "1",
                 Date = DateTime.Now,
                 TableNumber = 1,
             },
 
             new Order()
             {
-                ID = "3",
+                ID = "2",
                 Date = DateTime.Now,
                 TableNumber = 2,
             }
@@ -161,16 +161,16 @@ namespace BrewCrewTest
         {
             new BreweryManager()
             {
-                ID = "2",
+                ID = "1",
                 BreweryID = "1",
                 UserID = "1"
             },
 
             new BreweryManager()
             {
-                ID = "3",
+                ID = "2",
                 BreweryID = "1",
-                UserID = "1"
+                UserID = "2"
             }
 
         };
@@ -179,16 +179,16 @@ namespace BrewCrewTest
         {
             new LineItem()
             {
-                ID = "2",
+                ID = "1",
                 OrderID = "1",
                 BeerID = "1",
             },
 
             new LineItem()
             {
-                ID = "3",
+                ID = "2",
                 OrderID = "1",
-                BeerID = "1",
+                BeerID = "2",
             }
 
         };
@@ -202,7 +202,6 @@ namespace BrewCrewTest
             testContext.Orders.AddRange(TestOrders);
             testContext.LineItems.AddRange(TestLineItems);
             testContext.BreweryManagers.AddRange(TestBreweryManagers);
-            //testContext.BeerItems.AddRange(TestBeerItems);
             testContext.SaveChanges();
         }
 
@@ -417,10 +416,10 @@ namespace BrewCrewTest
         public void TestGetBreweryManagers()
         {
             //Arrange
-            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetOrders").Options;
+            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetBreweryManagers").Options;
             using var testContext = new BrewCrewContext(options);
 
-            //Seed(testContext);
+            Seed(testContext);
 
             //Act
             using var assertContext = new BrewCrewContext(options);
@@ -436,10 +435,10 @@ namespace BrewCrewTest
         public void TestGetUserByEmail()
         {
             //Arrange
-            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllUsersWhere").Options;
+            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllUsersByEmail").Options;
             using var testContext = new BrewCrewContext(options);
 
-            //Seed(testContext);
+            Seed(testContext);
 
             //Act
             using var assertContext = new BrewCrewContext(options);
@@ -455,7 +454,7 @@ namespace BrewCrewTest
         public void TestGetAllUsersByType()
         {
             //Arrange
-            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllUsersWhere").Options;
+            var options = new DbContextOptionsBuilder<BrewCrewContext>().UseInMemoryDatabase("TestGetAllUsersByType").Options;
             using var testContext = new BrewCrewContext(options);
 
             Seed(testContext);

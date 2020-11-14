@@ -90,6 +90,10 @@ namespace ManagerUI.Controllers
         public IActionResult UpdateBeer(Beer beer)
         {
             Brewery brewery = HttpContext.Session.GetObject<Brewery>("brewery");
+            if (brewery == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             beer.BreweryID = brewery.ID;
             if (ModelState.IsValid)
             {
@@ -105,21 +109,20 @@ namespace ManagerUI.Controllers
 
                     if (response.Result.IsSuccessStatusCode)
                     {
-                        Console.Write("SUCCESS!");
+                        return RedirectToAction("Beers", "Beer");
                     }
                 }
             }
-            return RedirectToAction("Beers", "Beer");
-        }
-
-        public IActionResult Add()
-        {
-            return View();
+            return View("Edit");
         }
 
         public IActionResult AddBeer(Beer beer)
         {
             Brewery brewery = HttpContext.Session.GetObject<Brewery>("brewery");
+            if (brewery == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (ModelState.IsValid)
             {
                 beer.ID = Guid.NewGuid().ToString();
@@ -136,11 +139,12 @@ namespace ManagerUI.Controllers
 
                     if (response.Result.IsSuccessStatusCode)
                     {
-                        Console.Write("SUCCESS!");
+                        return RedirectToAction("Beers", "Beer");
+                        
                     }
                 }
             }
-            return RedirectToAction("Beers", "Beer");
+            return View("Add");
         }
 
         public IActionResult Delete(string id)
@@ -157,7 +161,7 @@ namespace ManagerUI.Controllers
                     var beerResult = beerResponse.Result;
                     if (beerResult.IsSuccessStatusCode)
                     {
-                        Console.WriteLine("Success!");
+                        return RedirectToAction("Beers", "Beer");
                     }
                 }
             }

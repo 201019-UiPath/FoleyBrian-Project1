@@ -972,3 +972,5 @@
 2020-11-14 15:40:16.638 -07:00 [INF] Successfully retrieved brewery manager 1
 2020-11-14 15:40:17.082 -07:00 [INF] Successfully retrieved brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
 2020-11-14 15:40:20.866 -07:00 [INF] Successfully retrieved all orders from brewery eb9300b3-3ff9-42a0-9968-a50d0c882e0e
+2020-11-14 16:11:01.227 -07:00 [INF] Successfully retrieved all beers
+2020-11-14 16:11:02.598 -07:00 [INF] Successfully retrieved all beers

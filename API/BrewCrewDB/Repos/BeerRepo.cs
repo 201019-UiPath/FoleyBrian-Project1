@@ -14,7 +14,6 @@ namespace BrewCrewDB.Repos
 
         }
 
-
         override public void Add(Beer entity)
         {
             context.Beers.AddAsync(entity);

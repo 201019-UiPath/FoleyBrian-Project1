@@ -164,9 +164,9 @@ namespace BrewCrewDB.Migrations
                 columns: new[] { "ID", "Address", "City", "Name", "State", "Zip" },
                 values: new object[,]
                 {
-                    { "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", "123 Beer Lane", "East Helena", "Missouri River Brewing Company", "MT", (short)12345 },
-                    { "3f855e2f-394e-4bb2-beab-0b751b892194", "123 Stout Lane", "Helena", "Lewis and Clark Brewery", "MT", (short)12345 },
-                    { "89d7e7a2-182f-4241-865a-912d67dedebd", "123 Ale Lane", "Helena", "Bridger Brewing", "MT", (short)12345 }
+                    { "4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb", "123 Beer Lane", "East Helena", "Missouri River Brewing Company", "MT", (short)12345 },
+                    { "f2cc2e25-fdd3-482e-bc62-f71a0de09515", "123 Stout Lane", "Helena", "Lewis and Clark Brewery", "MT", (short)12345 },
+                    { "874036d4-1ac1-4021-bf04-242255d5135c", "123 Ale Lane", "Helena", "Bridger Brewing", "MT", (short)12345 }
                 });
 
             migrationBuilder.InsertData(
@@ -180,18 +180,13 @@ namespace BrewCrewDB.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Beers",
-                columns: new[] { "ID", "ABV", "BreweryID", "IBU", "Keg", "Name", "Price", "Type" },
-                values: new object[] { "1", 9.1999999999999993, "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", (short)33, 100, "Beer", 4.0, "stout" });
-
-            migrationBuilder.InsertData(
                 table: "BreweryManagers",
                 columns: new[] { "ID", "BreweryID", "UserID" },
                 values: new object[,]
                 {
-                    { "1", "eb9300b3-3ff9-42a0-9968-a50d0c882e0e", "1" },
-                    { "2", "3f855e2f-394e-4bb2-beab-0b751b892194", "2" },
-                    { "3", "89d7e7a2-182f-4241-865a-912d67dedebd", "3" }
+                    { "1", "4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb", "1" },
+                    { "2", "f2cc2e25-fdd3-482e-bc62-f71a0de09515", "2" },
+                    { "3", "874036d4-1ac1-4021-bf04-242255d5135c", "3" }
                 });
 
             migrationBuilder.CreateIndex(

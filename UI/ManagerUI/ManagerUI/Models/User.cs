@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ManagerUI.Models
@@ -13,6 +12,5 @@ namespace ManagerUI.Models
         public string Password{get; set;}
         public string Type{get;set;}
         public List<Order> Orders {get;set;}
-
     }
 }

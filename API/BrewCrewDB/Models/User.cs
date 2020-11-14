@@ -11,6 +11,5 @@ namespace BrewCrewDB.Models
         public string Password{get; set;}
         public string Type{get;set;}
         public List<Order> Orders {get;set;}
-
     }
 }
