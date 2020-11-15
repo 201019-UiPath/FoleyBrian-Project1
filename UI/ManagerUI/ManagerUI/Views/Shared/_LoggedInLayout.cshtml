@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Beer" asp-action="Beers">Brew Crew Manager</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -35,7 +35,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
             &copy; 2020 - Brew Crew Manager - <a asp-area="" asp-controller="Beer" asp-action="Beers">Beers</a>
         </div>
@@ -43,6 +43,49 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <style>
+        .navbar {
+            background-color: #A88325 !important;
+        }
+
+        .navbar-brand {
+            color: #E1C375 !important;
+        }
+
+        body {
+            background-color: #5C4814 !important;
+        }
+        .nav-link {
+            color: #E1C375 !important;
+        }
+        td {
+            color: #E1C375 !important;
+        }
+
+        th {
+            color: #E1C375 !important;
+        }
+
+        a {
+            color: #A88325 !important;
+        }
+        h1 {
+            color: #E1C375 !important;
+        }
+        label {
+            color: #E1C375 !important;
+        }
+        .btn {
+            background-color: #A88325 !important;
+            border: none !important;
+            color: #E1C375 !important;
+        }
+        tr {
+            border-color: #DBAB30 !important;
+            border: none !important;
+        }
+
+    </style>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

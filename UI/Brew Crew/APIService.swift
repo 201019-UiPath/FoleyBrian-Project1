@@ -17,7 +17,6 @@ class APIService: NSObject, URLSessionDelegate {
             session.dataTask(with: url) { data, response, error in
                 if let data = data {
                     if let jsonString = String(data: data, encoding: .utf8) {
-                        print(jsonString)
                         if let jsonData = jsonString.data(using: .utf8) {
                             do {
                                 let decoder = JSONDecoder()
@@ -68,13 +67,11 @@ class APIService: NSObject, URLSessionDelegate {
                 request.httpBody = jsonData
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 session.dataTask(with: request) { data, response, error in
-                    if let data = data {
-                        if let jsonString = String(data: data, encoding: .utf8) {
-                            print(jsonString)
-                            completion(true, user)
-                        } else {
-                            completion(false, nil)
-                        }
+                    if let err = error {
+                        print("Error", err)
+                        completion(false, nil)
+                    } else {
+                        completion(true, user)
                     }
                 }.resume()
             } catch {
@@ -92,7 +89,6 @@ class APIService: NSObject, URLSessionDelegate {
             session.dataTask(with: url) { data, response, error in
                 if let data = data {
                     if let jsonString = String(data: data, encoding: .utf8) {
-                        print(jsonString)
                         if let jsonData = jsonString.data(using: .utf8) {
                             do {
                                 let decoder = JSONDecoder()
@@ -119,7 +115,6 @@ class APIService: NSObject, URLSessionDelegate {
             session.dataTask(with: url) { data, response, error in
                 if let data = data {
                     if let jsonString = String(data: data, encoding: .utf8) {
-                        print(jsonString)
                         if let jsonData = jsonString.data(using: .utf8) {
                             do {
                                 let decoder = JSONDecoder()
@@ -200,13 +195,9 @@ class APIService: NSObject, URLSessionDelegate {
                 session.dataTask(with: request) { data, response, error in
                     if let err = error {
                         print("Error", err)
+                        completion(false)
                     } else {
-                        if let jsonString = String(data: data!, encoding: .utf8) {
-                            print(jsonString)
-                            completion(true)
-                        } else {
-                            completion(false)
-                        }
+                        completion(true)
                     }
                 }.resume()
             } catch {
@@ -223,7 +214,6 @@ class APIService: NSObject, URLSessionDelegate {
             session.dataTask(with: url) { data, response, error in
                 if let data = data {
                     if let jsonString = String(data: data, encoding: .utf8) {
-                        print(jsonString)
                         if jsonString == "" {return}
                         if let jsonData = jsonString.data(using: .utf8) {
                             do {
