@@ -31,29 +31,18 @@ class BeerSelectionController: UIViewController, UITableViewDelegate, UITableVie
         tableView.backgroundColor = .color2
         return tableView
     }()
-    
-//    let sendButton: UIButton = {
-//        let button = UIButton(type: .system)
-//        button.backgroundColor = .clear
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-//        button.addTarget(self, action: #selector(handleSendButton), for: .touchUpInside)
-//        return button
-//    }()
-    
-        lazy var cartButton: UIButton = {
-            let button = UIButton(type: .system)
-            button.backgroundColor = .clear
-            //button.translatesAutoresizingMaskIntoConstraints = false
-            button.setBackgroundImage(UIImage(systemName: "cart"), for: .normal)
-            button.addTarget(self, action: #selector(handleCartButton), for: .touchUpInside)
-            return button
-        }()
+        
+    lazy var cartButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .clear
+        button.setBackgroundImage(UIImage(systemName: "cart"), for: .normal)
+        button.addTarget(self, action: #selector(handleCartButton), for: .touchUpInside)
+        return button
+    }()
     
     lazy var orderHistoryButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .clear
-        //button.translatesAutoresizingMaskIntoConstraints = false
         button.setBackgroundImage(UIImage(systemName: "clock"), for: .normal)
         button.addTarget(self, action: #selector(handleOrderHistoryButton), for: .touchUpInside)
         return button
@@ -67,13 +56,10 @@ class BeerSelectionController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         navigationController?.navigationBar.isHidden = false
         tableView.register(BeerCell.self, forCellReuseIdentifier: beerCellId)
-        
         view.addSubview(tableView)
-        //view.addSubview(sendButton)
         setupConstraints()
         tableView.reloadData()
         title = "\(breweryName!)"
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,40 +70,15 @@ class BeerSelectionController: UIViewController, UITableViewDelegate, UITableVie
         setupNavBar()
     }
     
-//    @objc func handleSendButton() {
-//        for cellItem in tableView.indexPathsForSelectedRows! {
-//            if cellItem[1] == 0 {
-//                //send to gene pool
-//                guard let gpimage = self.image else { return }
-//                print("Sending to gene Pool")
-//                APIService.shared.sendMediaToGenePool(image: gpimage) { (Bool) in
-//                    self.navigationController?.popToRootViewController(animated: true)
-//                }
-//
-//            } else {
-//                //send to other users
-//            }
-//        }
-//    }
-    
     func setupConstraints() {
         tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         tableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         tableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        
-//        sendButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.heightAnchor.constraint(equalToConstant: 44).isActive = true
-//        sendButton.safeAreaLayoutGuide.widthAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
     internal func setupNavBar() {
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: cartButton), UIBarButtonItem(customView: orderHistoryButton)]
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

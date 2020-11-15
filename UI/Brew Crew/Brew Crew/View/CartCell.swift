@@ -17,12 +17,7 @@ class CartCell: UITableViewCell {
     var beer: Beer? {
         didSet {
             textLabel?.text = beer?.Name
-            detailTextLabel?.text = "\(String((beer?.ABV)!) ) \(String((beer?.IBU)!) ) \(beer?.Type ?? "")"
-            //guard let profileImageUrl = user?.profileImageURL else { return }
-//            APIService.shared.fetchImage(urlString: profileImageUrl) { (thumbnailImage) in
-//                self.profileImageThumbnail.image = thumbnailImage
-//            }
-            
+            detailTextLabel?.text = "ABV: \(String((beer?.ABV)!) )% | IBUs: \(String((beer?.IBU)!) ) | Type: \(beer?.Type ?? "") | Keg \(String((beer?.Keg)!) )%"
         }
     }
     

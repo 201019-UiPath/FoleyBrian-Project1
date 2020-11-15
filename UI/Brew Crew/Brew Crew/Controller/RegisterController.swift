@@ -118,7 +118,6 @@ class RegisterController: UIViewController {
         view.addSubview(registerButton)
         setupConstraints()
         addGestureRecognizers()
-        // Do any additional setup after loading the view.
     }
     
     @objc func handleTextChange() {

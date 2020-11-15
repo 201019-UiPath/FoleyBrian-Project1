@@ -1,18 +1,18 @@
 //
-//  OrderHistoryController.swift
+//  OrderHistoryDetailController.swift
 //  Brew Crew
 //
-//  Created by Brian Foley on 11/12/20.
+//  Created by Brian Foley on 11/14/20.
 //
 
 import Foundation
 import UIKit
 
-class OrderHistoryController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class OrderHistoryDetailController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let orderCellId = "ordercellId"
+    let beerCellId = "beercellId"
     
-    var orders: [Order]? {
+    var lineItems: [LineItem]? {
         didSet{
             tableView.reloadData()
         }
@@ -33,7 +33,7 @@ class OrderHistoryController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         navigationController?.navigationBar.isHidden = false
-        tableView.register(OrderHistoryCell.self, forCellReuseIdentifier: orderCellId)
+        tableView.register(OrderHistoryDetailCell.self, forCellReuseIdentifier: beerCellId)
         view.addSubview(tableView)
         setupConstraints()
         tableView.reloadData()
@@ -42,10 +42,6 @@ class OrderHistoryController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        APIService.shared.fetchAllOrdersByUserId(id: userId!) { (orders) in
-            self.orders = orders
-        }
-        setupNavBar()
     }
     
     func setupConstraints() {
@@ -55,25 +51,14 @@ class OrderHistoryController: UIViewController, UITableViewDelegate, UITableView
         tableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
     }
     
-    internal func setupNavBar() {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let lineitems = orders?[indexPath.item].LineItems else {return}
-        let orderhistorydetail = OrderHistoryDetailController()
-        orderhistorydetail.lineItems = lineitems
-        navigationController?.pushViewController(orderhistorydetail, animated: true)
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders?.count ?? 0
+        return lineItems?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: orderCellId, for: indexPath) as? OrderHistoryCell
-        if let orders = self.orders {
-            cell!.order = orders[indexPath.item]
+        let cell = tableView.dequeueReusableCell(withIdentifier: beerCellId, for: indexPath) as? OrderHistoryDetailCell
+        if let lineitems = self.lineItems {
+            cell!.beer = lineitems[indexPath.item].Beer_
         }
         return cell!
     }

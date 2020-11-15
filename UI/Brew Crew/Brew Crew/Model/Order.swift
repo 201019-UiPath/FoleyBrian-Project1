@@ -25,7 +25,6 @@ struct Order: Codable {
         ID = try container.decode(String.self, forKey: .ID)
         TableNumber = try container.decode(Int.self, forKey: .TableNumber)
         TotalPrice = try container.decode(Double.self, forKey: .TotalPrice)
-        
         do {
             DateTime = try container.decode(Date.self, forKey: .DateTime)
         } catch {

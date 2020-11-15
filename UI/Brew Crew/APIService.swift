@@ -40,6 +40,10 @@ class APIService: NSObject, URLSessionDelegate {
                             }
                         }
                     }
+                } else {
+                    DispatchQueue.main.async {
+                        completion(false, nil)
+                    }
                 }
             }.resume()
         }
@@ -98,7 +102,33 @@ class APIService: NSObject, URLSessionDelegate {
                                 DispatchQueue.main.async {
                                     completion(breweries)
                                 }
-                                
+                            } catch {
+                                print(error)
+                            }
+                        }
+                    }
+                }
+            }.resume()
+        }
+    }
+    
+    func fetchBrewerybyId(breweryId: String, completion: @escaping(Brewery) -> ()) {
+        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: OperationQueue.main)
+        
+        if let url = URL(string: "https://localhost:47720/api/brewery/Get/\(breweryId)") {
+            session.dataTask(with: url) { data, response, error in
+                if let data = data {
+                    if let jsonString = String(data: data, encoding: .utf8) {
+                        print(jsonString)
+                        if let jsonData = jsonString.data(using: .utf8) {
+                            do {
+                                let decoder = JSONDecoder()
+                                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                                decoder.dateDecodingStrategy = .formatted(.iso8601Full)
+                                let brewery = try decoder.decode(Brewery.self, from: jsonData)
+                                DispatchQueue.main.async {
+                                    completion(brewery)
+                                }
                             } catch {
                                 print(error)
                             }
@@ -161,14 +191,15 @@ class APIService: NSObject, URLSessionDelegate {
                 encoder.dateEncodingStrategy = .formatted(.iso8601Full)
                 let jsonData = try encoder.encode(order)
                 var request = URLRequest(url: url)
-                let jsonString = String(data: jsonData, encoding: .utf8)
-                print(jsonString)
+                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                    print(jsonString)
+                }
                 request.httpMethod = "POST"
                 request.httpBody = jsonData
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 session.dataTask(with: request) { data, response, error in
                     if let err = error {
-                        print("Error")
+                        print("Error", err)
                     } else {
                         if let jsonString = String(data: data!, encoding: .utf8) {
                             print(jsonString)
@@ -221,7 +252,6 @@ class APIService: NSObject, URLSessionDelegate {
 extension DateFormatter {
   static let iso8601Full: DateFormatter = {
     let formatter = DateFormatter()
-                         //"2020-11-11T20:53:01.029294"
     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
     formatter.calendar = Calendar(identifier: .iso8601)
     formatter.timeZone = TimeZone(secondsFromGMT: 0)

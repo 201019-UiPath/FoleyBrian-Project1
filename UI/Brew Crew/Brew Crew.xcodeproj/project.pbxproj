@@ -11,7 +11,6 @@
 		056DEECC255CB037007BA9A3 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DF4255AFD18005D19E2 /* Brewery.swift */; };
 		056DEEE1255CB6CD007BA9A3 /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DF1255AFD18005D19E2 /* LineItem.swift */; };
 		056DEF01255CB6E5007BA9A3 /* BreweryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DEF255AFD18005D19E2 /* BreweryManager.swift */; };
-		056DEF30255CB6FF007BA9A3 /* BeerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DEE255AFD18005D19E2 /* BeerItem.swift */; };
 		056DEF46255CB709007BA9A3 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DF0255AFD18005D19E2 /* Beer.swift */; };
 		05816E27255B0A65005D19E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DED255AFD18005D19E2 /* User.swift */; };
 		05816E35255B0C81005D19E2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05816DF2255AFD18005D19E2 /* Order.swift */; };
@@ -32,6 +31,9 @@
 		05A015DB255E134A00211AFC /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015DA255E134A00211AFC /* CartCell.swift */; };
 		05A015E0255E32C200211AFC /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015DF255E32C200211AFC /* OrderHistoryController.swift */; };
 		05A015E5255E37FA00211AFC /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015E4255E37FA00211AFC /* OrderHistoryCell.swift */; };
+		05A015F22560AAF800211AFC /* OrderHistoryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015F12560AAF800211AFC /* OrderHistoryDetailController.swift */; };
+		05A015FA2560B2D400211AFC /* TableSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015F92560B2D400211AFC /* TableSelectionController.swift */; };
+		05A015FF2560CAE600211AFC /* OrderHistoryDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A015FE2560CAE600211AFC /* OrderHistoryDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,6 @@
 /* Begin PBXFileReference section */
 		056AA30C255C5C60006BE4C9 /* BrewerySelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewerySelectionController.swift; sourceTree = "<group>"; };
 		05816DED255AFD18005D19E2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		05816DEE255AFD18005D19E2 /* BeerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerItem.swift; sourceTree = "<group>"; };
 		05816DEF255AFD18005D19E2 /* BreweryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreweryManager.swift; path = "Brew Crew/Model/BreweryManager.swift"; sourceTree = SOURCE_ROOT; };
 		05816DF0255AFD18005D19E2 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		05816DF1255AFD18005D19E2 /* LineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineItem.swift; sourceTree = "<group>"; };
@@ -83,6 +84,9 @@
 		05A015DA255E134A00211AFC /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		05A015DF255E32C200211AFC /* OrderHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
 		05A015E4255E37FA00211AFC /* OrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
+		05A015F12560AAF800211AFC /* OrderHistoryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetailController.swift; sourceTree = "<group>"; };
+		05A015F92560B2D400211AFC /* TableSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSelectionController.swift; sourceTree = "<group>"; };
+		05A015FE2560CAE600211AFC /* OrderHistoryDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				05816DF0255AFD18005D19E2 /* Beer.swift */,
-				05816DEE255AFD18005D19E2 /* BeerItem.swift */,
 				05816DF4255AFD18005D19E2 /* Brewery.swift */,
 				05816DEF255AFD18005D19E2 /* BreweryManager.swift */,
 				05816DF1255AFD18005D19E2 /* LineItem.swift */,
@@ -186,6 +189,7 @@
 				05A015D0255CEFA800211AFC /* BeerCell.swift */,
 				05A015DA255E134A00211AFC /* CartCell.swift */,
 				05A015E4255E37FA00211AFC /* OrderHistoryCell.swift */,
+				05A015FE2560CAE600211AFC /* OrderHistoryDetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +203,8 @@
 				05A015CB255CD52100211AFC /* BeerSelectionController.swift */,
 				05A015D5255E0C9500211AFC /* CartController.swift */,
 				05A015DF255E32C200211AFC /* OrderHistoryController.swift */,
+				05A015F12560AAF800211AFC /* OrderHistoryDetailController.swift */,
+				05A015F92560B2D400211AFC /* TableSelectionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A015FF2560CAE600211AFC /* OrderHistoryDetailCell.swift in Sources */,
 				05A015CC255CD52100211AFC /* BeerSelectionController.swift in Sources */,
 				05A015DB255E134A00211AFC /* CartCell.swift in Sources */,
 				0583F719255A429400F65E06 /* RegisterController.swift in Sources */,
@@ -351,10 +358,11 @@
 				05816E35255B0C81005D19E2 /* Order.swift in Sources */,
 				05A015D6255E0C9500211AFC /* CartController.swift in Sources */,
 				05A015E0255E32C200211AFC /* OrderHistoryController.swift in Sources */,
+				05A015FA2560B2D400211AFC /* TableSelectionController.swift in Sources */,
 				056DEF46255CB709007BA9A3 /* Beer.swift in Sources */,
-				056DEF30255CB6FF007BA9A3 /* BeerItem.swift in Sources */,
 				0583F6D0255A40D900F65E06 /* AppDelegate.swift in Sources */,
 				0583F6D2255A40D900F65E06 /* SceneDelegate.swift in Sources */,
+				05A015F22560AAF800211AFC /* OrderHistoryDetailController.swift in Sources */,
 				056AA30D255C5C60006BE4C9 /* BrewerySelectionController.swift in Sources */,
 				05A015D1255CEFA800211AFC /* BeerCell.swift in Sources */,
 				0583F71E255A42F300F65E06 /* APIService.swift in Sources */,

@@ -1,43 +1,42 @@
 //
-//  BreweryCell.swift
+//  OrderHistoryCell.swift
 //  Brew Crew
 //
-//  Created by Brian Foley on 11/11/20.
+//  Created by Brian Foley on 11/12/20.
 //
 
 import UIKit
 
-class BreweryCell: UITableViewCell {
+class OrderHistoryDetailCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
         setupConstraints()
     }
     
-    var brewery: Brewery? {
+    var beer: Beer? {
         didSet {
-            textLabel?.text = brewery?.Name
-            detailTextLabel?.text = "\(brewery?.Address ?? ""), \(brewery?.City ?? ""), \(brewery?.State ?? "")"
+            textLabel?.text = beer?.Name
+            detailTextLabel?.text = "ABV: \(String((beer?.ABV)!) )% | IBUs: \(String((beer?.IBU)!) ) | Type: \(beer?.Type ?? "") | Keg \(String((beer?.Keg)!) )%"
         }
     }
     
     let profileImageThumbnail: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "logo")
-        iv.layer.cornerRadius = 25
+        iv.image = UIImage(named: "beer")
         iv.contentMode = .scaleAspectFit
+        iv.layer.cornerRadius = 25
         iv.layer.masksToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
-
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-        backgroundColor = .color3
         self.selectionStyle = SelectionStyle.none
         contentView.isUserInteractionEnabled = false
         addSubview(profileImageThumbnail)
+        backgroundColor = .color3
     }
     
     func setupConstraints() {
@@ -46,7 +45,6 @@ class BreweryCell: UITableViewCell {
         profileImageThumbnail.heightAnchor.constraint(equalToConstant: 50).isActive = true
         profileImageThumbnail.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
-
         textLabel?.frame = CGRect(x: 70, y: textLabel!.frame.origin.y - 2, width: textLabel!.frame.width, height: textLabel!.frame.height )
         
         detailTextLabel?.frame = CGRect(x: 70, y: detailTextLabel!.frame.origin.y + 2, width: detailTextLabel!.frame.width, height: detailTextLabel!.frame.height )
@@ -57,4 +55,3 @@ class BreweryCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
-

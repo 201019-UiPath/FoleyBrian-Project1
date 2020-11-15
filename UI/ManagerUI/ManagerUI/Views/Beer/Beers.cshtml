@@ -39,7 +39,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ABV)
+                @Html.DisplayFor(modelItem => item.ABV)%
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IBU)
@@ -48,7 +48,7 @@
                 @Html.DisplayFor(modelItem => item.Keg)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                $@Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

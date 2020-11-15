@@ -100,7 +100,6 @@ class LoginController: UIViewController {
         view.addSubview(activityIndicatorView)
         setupConstraints()
         addGestureRecognizers()
-        // Do any additional setup after loading the view.
     }
     
     @objc func handleTextChange() {
@@ -133,7 +132,6 @@ class LoginController: UIViewController {
         titleImageTopAnchor?.isActive = true
         titleImage.heightAnchor.constraint(equalToConstant: 200).isActive = true
         titleImage.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        //titleImage.anchor(top: view.safeAreaLayoutGuide.bottomAnchor, left: nil, bottom: nil, right: nil, paddingTop: 10, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 200, height: 200)
         titleImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         stackView.anchor(top: titleImage.bottomAnchor, left: nil, bottom: nil, right: nil, paddingTop: 15, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 350, height: 100)
@@ -141,7 +139,6 @@ class LoginController: UIViewController {
         
         loginButton.anchor(top: stackView.bottomAnchor, left: stackView.leftAnchor, bottom: nil, right: stackView.rightAnchor, paddingTop: 15, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
         loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
         
         registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
@@ -191,11 +188,7 @@ class LoginController: UIViewController {
         }
         self.activityIndicatorView.startAnimating()
     }
-    
-    func presentHomeController() {
-        //navigationController?.pushViewController(HomeViewController(), animated: true)
-    }
-    
+        
     lazy var registerController: RegisterController = {
         let controller = RegisterController()
         return controller

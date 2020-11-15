@@ -11,13 +11,13 @@ import UIKit
 class CartController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     static var cart = [Beer]()
+    static var tableNumber: Int?
     
     let cartCellId = "cartcellId"
     
     var user: User?
     var breweryId: String?
     var image: UIImage?
-    
     
     let tableView: UITableView = {
         let tableView = UITableView()
@@ -26,33 +26,21 @@ class CartController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return tableView
     }()
     
-//    let sendButton: UIButton = {
-//        let button = UIButton(type: .system)
-//        button.backgroundColor = .clear
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-//        button.addTarget(self, action: #selector(handleSendButton), for: .touchUpInside)
-//        return button
-//    }()
-    
-        lazy var orderButton: UIButton = {
-            let button = UIButton(type: .system)
-            button.backgroundColor = .clear
-            //button.translatesAutoresizingMaskIntoConstraints = false
-            button.setBackgroundImage(UIImage(systemName: "checkmark.rectangle"), for: .normal)
-            button.addTarget(self, action: #selector(handlePlaceOrder), for: .touchUpInside)
-            return button
-        }()
+    lazy var orderButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .clear
+        button.setBackgroundImage(UIImage(systemName: "checkmark.rectangle"), for: .normal)
+        button.addTarget(self, action: #selector(handlePlaceOrder), for: .touchUpInside)
+        return button
+    }()
     
     lazy var resetButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .clear
-        //button.translatesAutoresizingMaskIntoConstraints = false
         button.setBackgroundImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
         button.addTarget(self, action: #selector(handleReset), for: .touchUpInside)
         return button
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,9 +49,7 @@ class CartController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         navigationController?.navigationBar.isHidden = false
         tableView.register(CartCell.self, forCellReuseIdentifier: cartCellId)
-        
         view.addSubview(tableView)
-        //view.addSubview(sendButton)
         setupConstraints()
         tableView.reloadData()
         title = "Cart"
@@ -75,41 +61,15 @@ class CartController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setupNavBar()
     }
     
-//    @objc func handleSendButton() {
-//        for cellItem in tableView.indexPathsForSelectedRows! {
-//            if cellItem[1] == 0 {
-//                //send to gene pool
-//                guard let gpimage = self.image else { return }
-//                print("Sending to gene Pool")
-//                APIService.shared.sendMediaToGenePool(image: gpimage) { (Bool) in
-//                    self.navigationController?.popToRootViewController(animated: true)
-//                }
-//
-//            } else {
-//                //send to other users
-//            }
-//        }
-//    }
-    
     func setupConstraints() {
         tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         tableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         tableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        
-//        sendButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.heightAnchor.constraint(equalToConstant: 44).isActive = true
-//        sendButton.safeAreaLayoutGuide.widthAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
     internal func setupNavBar() {
-        //navigationItem.rightBarButtonItem =
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: orderButton), UIBarButtonItem(customView: resetButton)]
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,8 +92,9 @@ class CartController: UIViewController, UITableViewDelegate, UITableViewDataSour
             guard let price = beer.Price else {continue}
             totalPrice += price
         }
-        
-        APIService.shared.placeOrder(beers: CartController.cart, breweryId: self.breweryId!, userId: (self.user?.ID)!, total: totalPrice, tableNumber: 1) { (bool) in
+        let beers = CartController.cart
+        guard let breweryid = breweryId, let userid = user?.ID, let tableNumber = CartController.tableNumber else {return}
+        APIService.shared.placeOrder(beers: beers, breweryId: breweryid, userId: userid, total: totalPrice, tableNumber: tableNumber) { (bool) in
             if bool {
                 CartController.cart.removeAll()
                 self.tableView.reloadData()

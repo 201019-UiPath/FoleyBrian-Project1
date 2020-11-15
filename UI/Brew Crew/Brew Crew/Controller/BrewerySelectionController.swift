@@ -29,16 +29,6 @@ class BrewerySelectionController: UIViewController, UITableViewDelegate, UITable
         return tableView
     }()
     
-//    let sendButton: UIButton = {
-//        let button = UIButton(type: .system)
-//        button.backgroundColor = .clear
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setBackgroundImage(UIImage(systemName: "circle"), for: .normal)
-//        button.addTarget(self, action: #selector(handleSendButton), for: .touchUpInside)
-//        return button
-//    }()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,10 +37,8 @@ class BrewerySelectionController: UIViewController, UITableViewDelegate, UITable
         navigationController?.navigationBar.isHidden = false
         tableView.register(BreweryCell.self, forCellReuseIdentifier: breweryCellId)
         view.addSubview(tableView)
-        //view.addSubview(sendButton)
         setupConstraints()
         title = "Welcome \(user!.FName!)"
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,44 +50,31 @@ class BrewerySelectionController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-//    @objc func handleSendButton() {
-//        for cellItem in tableView.indexPathsForSelectedRows! {
-//            if cellItem[1] == 0 {
-//                //send to gene pool
-//                guard let gpimage = self.image else { return }
-//                print("Sending to gene Pool")
-//                APIService.shared.sendMediaToGenePool(image: gpimage) { (Bool) in
-//                    self.navigationController?.popToRootViewController(animated: true)
-//                }
-//
-//            } else {
-//                //send to other users
-//            }
-//        }
-//    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        title = ""
+    }
     
     func setupConstraints() {
         tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         tableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         tableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        
-//        sendButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -35).isActive = true
-//        sendButton.safeAreaLayoutGuide.heightAnchor.constraint(equalToConstant: 44).isActive = true
-//        sendButton.safeAreaLayoutGuide.widthAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
     internal func setupNavBar() {
+        navigationController?.navigationBar.barTintColor = .color1
+        navigationController?.navigationBar.tintColor = .color2
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.color2]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let breweries_ = breweries else {return}
-        let bsc = BeerSelectionController()
-        bsc.breweryId = breweries_[indexPath.item].ID
-        bsc.user = user
-        bsc.breweryName = breweries_[indexPath.item].Name
-        navigationController?.pushViewController(bsc, animated: true)
+        let tsc = TableSelectionController()
+        tsc.breweryId = breweries_[indexPath.item].ID
+        tsc.user = user
+        tsc.breweryName = breweries_[indexPath.item].Name
+        navigationController?.pushViewController(tsc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
