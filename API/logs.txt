@@ -1639,3 +1639,10 @@
 2020-11-15 16:47:10.625 -07:00 [INF] Successfully retrieved brewery 4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb
 2020-11-15 16:47:16.572 -07:00 [INF] Successfully retrieved beer 2d50302d-e3ba-40c5-a1ee-373ab943f3f1
 2020-11-15 16:47:19.874 -07:00 [INF] Successfully retrieved beer 8872cf7e-7952-4e79-a64a-b73763b1d2ce
+2020-11-15 17:06:07.984 -07:00 [INF] Successfully retrieved user 1
+2020-11-15 17:06:08.281 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-15 17:06:08.390 -07:00 [INF] Successfully retrieved brewery 4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb
+2020-11-15 17:06:15.369 -07:00 [INF] Successfully retrieved beer 8872cf7e-7952-4e79-a64a-b73763b1d2ce
+2020-11-15 17:06:23.230 -07:00 [INF] Successfully updated beer 8872cf7e-7952-4e79-a64a-b73763b1d2ce
+2020-11-15 17:06:23.384 -07:00 [INF] Successfully retrieved brewery manager 1
+2020-11-15 17:06:23.489 -07:00 [INF] Successfully retrieved brewery 4a6ac1e1-8673-421b-8ed0-0efd1d3e1aeb
