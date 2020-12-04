@@ -43,22 +43,22 @@ Run the API. Do the following in your terminal:
 ### Manager Web App
 
 Manager login screen<br>
-<img src='media/manager_login.png' height="60%" width="60%"/>
+<img src='media/manager_login.png' height="60%" width="60%"/><br>
 Manager beer list screen<br>
-<img src='media/beer_list.png' height="60%" width="60%"/>
+<img src='media/beer_list.png' height="60%" width="60%"/><br>
 Manager update beer screen<br>
-<img src='media/update_beer.png' height="60%" width="60%"/>
+<img src='media/update_beer.png' height="60%" width="60%"/><br>
 Manager order history screen<br>
-<img src='media/manager_order_history.png' height="60%" width="60%"/>
+<img src='media/manager_order_history.png' height="60%" width="60%"/><br>
 
 ### IOS Application
 
 Customer navigating breweries<br>
-<img src='media/nav_brewery.gif' height="40%" width="40%"/>
+<img src='media/nav_brewery.gif' height="40%" width="40%"/><br>
 Customer placing an order<br>
-<img src='media/order_beer.gif' height="40%" width="40%"/>
+<img src='media/order_beer.gif' height="40%" width="40%"/><br>
 Customer viewing order history<br>
-<img src='media/order_history.gif' height="40%" width="40%"/>
+<img src='media/order_history.gif' height="40%" width="40%"/><br>
 
 
 
