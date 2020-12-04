@@ -17,7 +17,7 @@ class OrderHistoryDetailCell: UITableViewCell {
     var beer: Beer? {
         didSet {
             textLabel?.text = beer?.Name
-            detailTextLabel?.text = "ABV: \(String((beer?.ABV)!) )% | IBUs: \(String((beer?.IBU)!) ) | Type: \(beer?.Type ?? "") | Keg \(String((beer?.Keg)!) )%"
+            detailTextLabel?.text = "ABV: \(String((beer?.ABV)!) )% | IBUs: \(String((beer?.IBU)!) ) | Type: \(beer?.Type ?? "")"
         }
     }
     
