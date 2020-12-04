@@ -78,3 +78,4 @@ Customer viewing order history<br>
 ## Contributors
 Special thanks to <a href='https://github.com/jjennings510'>Jacob Jennings</a> for helping out with routing, json serialization, and http requests
 ## License
+MIT
