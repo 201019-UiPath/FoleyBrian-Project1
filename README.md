@@ -19,8 +19,9 @@ Brew Crew is a beer management system for brewery owners. It enables brewery man
 * View Brewery order history
 * View Customer order history
 * Browse beers by brewery
-* Order single or multiple beers <br><br>
-Feature Roll-Out: <br>
+* Order single or multiple beers
+
+### Feature Roll-Out:
 
 * Beer sensor client that obtains the amount of beer left in a keg. This will communicate with the postgreSQL DB through the API
 * In-depth data analysis for brewery managers. This will give the managers the option to generate charts and other visual tools to be able to view beer sells by type, data(season), alcohol content, bitterness, and name
