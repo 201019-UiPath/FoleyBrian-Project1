@@ -30,14 +30,25 @@ Brew Crew is a beer management system for brewery owners. It enables brewery man
 ## Getting Started
 Note: to run the IOS application, you must have macOS 10.14 or later and xcode 11 installed. Most of the code is not swift 5.2 specific so if you decide to use an earlier version of swift only minor changes, if any at all, would need to be changed. Therefore, it is possible to run on earlier versions of macOS.
 
-Run the API. Do the following in your terminal: <br>
+Run the API: in a terminal window run the follwoing commands<br>
 1. clone the directory: <br>
 `git clone https://github.com/201019-UiPath/FoleyBrian-Project1.git` <br>
 2. navigate to the API Folder <br>
 `cd FoleyBrian-Project1/API` <br>
-3. run the following dotnet command. This will run the api on your local server <br>
+3. run the following dotnet command. This will run the api on your local server port 47720<br>
 `dotnet run --project BrewCrewAPI` <br>
+4. minimize the terminal window
 
+Run the ManagerUI Web Application: in a seperate terminal window run the following commands
+2. navigate to the ManagerUI Folder <br>
+`cd FoleyBrian-Project1/UI/ManagerUI` <br>
+3. run the following dotnet command. This will run the web application on your local server port 5001<br>
+`dotnet run --project BrewCrewAPI` <br>
+4. minimize the terminal window
+
+Navigate to the manager UI by opening up a browser of your choice and input the following url:<br>
+`localhost:5001`
+You should see the following screen: <br>
 
 ## Usage
 
