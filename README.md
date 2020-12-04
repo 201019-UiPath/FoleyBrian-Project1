@@ -15,10 +15,15 @@ Brew Crew is a beer management system for brewery owners. It enables brewery man
 * CSS
 
 ## Features
-
+* Add, Edit, Delete Beers
+* View Brewery order history
+* View Customer order history
+* Browse beers by brewery
+* Order single or multiple beers
 Feature Roll-Out:
 * Beer sensor client that obtains the amount of beer left in a keg. This will communicate with the postgreSQL DB through the API
 * In-depth data analysis for brewery managers. This will give the managers the option to generate charts and other visual tools to be able to view beer sells by type, data(season), alcohol content, bitterness, and name
+* Archive beers. If an order has been placed by a customer for a particular beer, that beer cannot be deleted. I will add archive functionality which brewery managers can add/remove beer listings. This is also helpful for seasonal beers
 
 ## Getting Started
 Note: to run the IOS application, you must have macOS 10.14 or later and xcode 11 installed. Most of the code is not swift 5.2 specific so if you decide to use an earlier version of swift only minor changes, if any at all, would need to be changed. Therefore, it is possible to run on earlier versions of macOS.
