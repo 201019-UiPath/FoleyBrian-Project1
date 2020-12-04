@@ -36,13 +36,14 @@ Run the API. Do the following in your terminal:
 3. run the following dotnet command. This will run the api on your local server
 `dotnet run --project BrewCrewAPI`
 
-<img href='media/nav_brewery.gif'>
-<img href='media/order_beer.gif'>
-<img href='media/order_history.gif'>
-<img href='media/manager_login.png'>
-<img href='media/beer_list.png'>
-<img href='media/update_beer.png'>
-<img href='media/manager_order_history.png'>
+<img src="MDImages/IMG_1060.png" height="40%" width="40%"/>
+<img src='media/nav_brewery.gif'>
+<img src='media/order_beer.gif'>
+<img src='media/order_history.gif'>
+<img src='media/manager_login.png'>
+<img src='media/beer_list.png'>
+<img src='media/update_beer.png'>
+<img src='media/manager_order_history.png'>
 
 ## Usage
 
