@@ -35,5 +35,6 @@ Run the API. Do the following in your terminal:
 ## Usage
 
 ## Contributors
+Special thanks to <a href='https://github.com/201019-UiPath/JenningsJacob-Project1'>Jacob Jennings</a> for help with routing, json serialization, and http requests
 
 ## License
