@@ -36,16 +36,31 @@ Run the API. Do the following in your terminal:
 3. run the following dotnet command. This will run the api on your local server
 `dotnet run --project BrewCrewAPI`
 
-<img src="MDImages/IMG_1060.png" height="40%" width="40%"/>
-<img src='media/nav_brewery.gif' height="40%" width="40%"/>
-<img src='media/order_beer.gif' height="40%" width="40%"/>
-<img src='media/order_history.gif' height="40%" width="40%"/>
-<img src='media/manager_login.png' height="40%" width="40%"/>
-<img src='media/beer_list.png' height="40%" width="40%"/>
-<img src='media/update_beer.png' height="40%" width="40%"/>
-<img src='media/manager_order_history.png' height="40%" width="40%"/>
+
+
 
 ## Usage
+### Manager Web App
+
+#### Manager login screen
+<img src='media/manager_login.png' height="60%" width="60%"/>
+#### Manager beer list screen
+<img src='media/beer_list.png' height="60%" width="60%"/>
+#### Manager update beer screen
+<img src='media/update_beer.png' height="60%" width="60%"/>
+#### Manager order history screen
+<img src='media/manager_order_history.png' height="60%" width="60%"/>
+
+### IOS Application
+
+#### Customer navigating breweries
+<img src='media/nav_brewery.gif' height="40%" width="40%"/>
+#### Customer placing an order
+<img src='media/order_beer.gif' height="40%" width="40%"/>
+#### Customer viewing order history
+<img src='media/order_history.gif' height="40%" width="40%"/>
+
+
 
 ## Contributors
 Special thanks to <a href='https://github.com/jjennings510'>Jacob Jennings</a> for helping out with routing, json serialization, and http requests
